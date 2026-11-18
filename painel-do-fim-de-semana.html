@@ -1,0 +1,1379 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:,">
+<title>Painel do Fim de Semana — 21 e 22 de novembro de 2026</title>
+<meta name="description" content="Guia público do fim de semana de 21 e 22 de novembro de 2026: shows, festivais, feiras e exposições na capital de São Paulo, no ABC e no interior de SP. Feito pela PVSR HOLDING TECH.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Painel do Fim de Semana — 21 e 22 de novembro de 2026">
+<meta property="og:description" content="74 programas na capital, no ABC e no interior de SP — 27 gratuitos. Funk, baladas, pagode, sertanejo, rock, eletrônica, stand-up, teatro, feiras e exposições, com horários, lugares, preços e fontes. Feito pela PVSR HOLDING TECH.">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#06060b; --bg2:#0b0b14; --card:#10101c; --card2:#141424;
+  --line:rgba(201,168,106,.28); --line-soft:rgba(192,198,212,.14);
+  --gold:#c9a86a; --gold-bright:#e8c87a; --gold-dim:#8a744a;
+  --silver:#c0c6d4; --silver-bright:#eef1f7; --muted:#9aa1b3; --muted2:#6f7688;
+  --green:#7fc98f; --red:#e08a8a;
+  --radius:14px;
+}
+/* Estética fixa aprovada: preto espacial, prata e dourado — sem modo claro. */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--silver);font-family:"Manrope",system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background:
+  radial-gradient(1px 1px at 12% 18%, rgba(238,241,247,.5) 50%, transparent 51%),
+  radial-gradient(1.5px 1.5px at 78% 8%, rgba(232,200,122,.6) 50%, transparent 51%),
+  radial-gradient(1px 1px at 34% 42%, rgba(238,241,247,.35) 50%, transparent 51%),
+  radial-gradient(1px 1px at 88% 36%, rgba(238,241,247,.4) 50%, transparent 51%),
+  radial-gradient(1.5px 1.5px at 55% 14%, rgba(238,241,247,.3) 50%, transparent 51%),
+  radial-gradient(1px 1px at 6% 62%, rgba(232,200,122,.4) 50%, transparent 51%),
+  radial-gradient(1px 1px at 94% 74%, rgba(238,241,247,.3) 50%, transparent 51%),
+  radial-gradient(900px 420px at 50% -120px, rgba(201,168,106,.10), transparent 70%);
+}
+
+a{color:var(--gold-bright)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px 64px;position:relative}
+
+/* HERO */
+.hero{padding:44px 0 8px;text-align:center}
+.hero .dates{font-size:.78rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.hero h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:clamp(3rem,8.5vw,5.6rem);line-height:.98;margin:.35em 0 .15em;color:var(--silver-bright)}
+.genres{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;margin-top:20px}
+.genres span{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line-soft);border-radius:999px;padding:5px 12px;font-size:.76rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.genres i{width:8px;height:8px;border-radius:50%;flex:none}
+.hero h1 em{font-style:italic;color:var(--gold-bright)}
+.hero p.lead{max-width:640px;margin:0 auto;color:var(--muted);font-size:1.02rem}
+.hero-rule{display:flex;align-items:center;gap:14px;max-width:420px;margin:26px auto 0}
+.hero-rule::before,.hero-rule::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.hero-rule span{color:var(--gold);font-size:.9rem}
+.stats{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:26px}
+.stat{border:1px solid var(--line-soft);background:var(--card);border-radius:999px;padding:8px 16px;font-size:.85rem;color:var(--muted)}
+.stat b{color:var(--silver-bright);font-size:1rem;margin-right:4px}
+.stat.gold{border-color:var(--line);color:var(--gold-bright)}
+.stat.gold b{color:var(--gold-bright)}
+
+/* FILTERS */
+.filters{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);padding:14px 0 10px;margin-top:28px;border-bottom:1px solid var(--line-soft)}
+.filters-row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.chip{appearance:none;border:1px solid var(--line-soft);background:var(--card);color:var(--muted);border-radius:999px;padding:9px 16px;min-height:38px;font:600 .85rem "Manrope",sans-serif;cursor:pointer;transition:.18s}
+.chip:hover{border-color:var(--gold);color:var(--silver-bright)}
+.chip[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#14100a}
+.chip.day[aria-pressed="true"]{background:var(--silver-bright);border-color:var(--silver-bright);color:#0b0b14}
+.filters-note{text-align:center;font-size:.78rem;color:var(--muted2);margin:8px 0 2px}
+
+/* SECTIONS */
+section{margin-top:44px}
+.sec-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+.sec-head h2{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(1.9rem,4.5vw,2.7rem);font-weight:600;color:var(--silver-bright);margin:0}
+.sec-head h2 .gold{color:var(--gold-bright);font-style:italic}
+.sec-head .when{color:var(--gold);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.75rem}
+.sec-sub{color:var(--muted);margin:0 0 20px;max-width:720px}
+
+/* FEATURED */
+.feat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.feat{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:linear-gradient(160deg,var(--card2),var(--card));position:relative;overflow:hidden}
+.feat::after{content:"";position:absolute;inset:auto -40px -60px auto;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,106,.16),transparent 70%)}
+.feat .kicker{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.feat h3{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.75rem;line-height:1.1;margin:.35em 0 .3em;color:var(--silver-bright)}
+.feat p{color:var(--muted);margin:0 0 14px;font-size:.94rem}
+
+/* CARDS */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{border:1px solid var(--line-soft);background:var(--card);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:10px}
+.card:hover{border-color:var(--line)}
+.card-top{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.tag{font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:4px 9px;border-radius:999px;border:1px solid var(--line-soft);color:var(--muted)}
+.tag.show{color:var(--gold-bright);border-color:var(--line)}
+.tag.free{color:var(--green);border-color:rgba(127,201,143,.35)}
+.tag.abc{color:var(--silver-bright);background:rgba(192,198,212,.10)}
+.tag.interior{color:var(--gold-bright);background:rgba(201,168,106,.12);border-color:var(--line)}
+.public-badge{display:inline-block;margin-top:16px;border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-bright);background:rgba(201,168,106,.08)}
+.tag.last{color:var(--red);border-color:rgba(224,138,138,.35)}
+/* Cores por gênero */
+.tag.g-funk{color:#ff8fb2;border-color:rgba(255,143,178,.45);background:rgba(255,143,178,.08)}
+.tag.g-balada{color:#b79cff;border-color:rgba(183,156,255,.45);background:rgba(183,156,255,.08)}
+.tag.g-pagode{color:#f0b35e;border-color:rgba(240,179,94,.45);background:rgba(240,179,94,.08)}
+.tag.g-sertanejo{color:#f08a4b;border-color:rgba(240,138,75,.45);background:rgba(240,138,75,.08)}
+.tag.g-rock{color:#ff7a6b;border-color:rgba(255,122,107,.45);background:rgba(255,122,107,.08)}
+.tag.g-eletronica{color:#6bd5e1;border-color:rgba(107,213,225,.45);background:rgba(107,213,225,.08)}
+.tag.g-rap{color:#b5d96b;border-color:rgba(181,217,107,.45);background:rgba(181,217,107,.08)}
+.tag.g-standup{color:#6bd9b0;border-color:rgba(107,217,176,.45);background:rgba(107,217,176,.08)}
+.card{position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:transparent}
+.card.g-funk::before{background:linear-gradient(90deg,#ff8fb2,transparent 75%)}
+.card.g-balada::before{background:linear-gradient(90deg,#b79cff,transparent 75%)}
+.card.g-pagode::before{background:linear-gradient(90deg,#f0b35e,transparent 75%)}
+.card.g-sertanejo::before{background:linear-gradient(90deg,#f08a4b,transparent 75%)}
+.card.g-rock::before{background:linear-gradient(90deg,#ff7a6b,transparent 75%)}
+.card.g-eletronica::before{background:linear-gradient(90deg,#6bd5e1,transparent 75%)}
+.card.g-rap::before{background:linear-gradient(90deg,#b5d96b,transparent 75%)}
+.card.g-standup::before{background:linear-gradient(90deg,#6bd9b0,transparent 75%)}
+.feat.g-funk .kicker{color:#ff8fb2}
+.feat.g-eletronica .kicker{color:#6bd5e1}
+.chip.genre[aria-pressed="true"]{background:var(--silver-bright);border-color:var(--silver-bright);color:#0b0b14}
+.price{margin-left:auto;font-weight:800;color:var(--silver-bright);font-size:.88rem;white-space:nowrap}
+.price.free{color:var(--green)}
+.card h3{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.42rem;line-height:1.15;margin:0;color:var(--silver-bright);font-weight:600}
+.card p.desc{margin:0;color:var(--muted);font-size:.9rem;flex:1}
+.meta{display:grid;gap:5px;font-size:.86rem;border-top:1px solid var(--line-soft);padding-top:12px}
+.meta div{display:flex;gap:8px}
+.meta .ic{color:var(--gold);width:18px;text-align:center;flex:none}
+.meta b{color:var(--silver-bright);font-weight:700}
+.src{font-size:.78rem;color:var(--muted2)}
+.src a{color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+.src a:hover{color:var(--gold-bright)}
+/* Botão de compra — o clique no card inteiro leva ao mesmo destino */
+.buy{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:10px;background:var(--gold);color:#14100a;font-weight:800;font-size:.93rem;text-decoration:none;transition:background .18s}
+.buy:hover{background:var(--gold-bright);color:#14100a}
+.buy.free{background:rgba(127,201,143,.10);border:1px solid rgba(127,201,143,.45);color:var(--green)}
+.buy.free:hover{background:rgba(127,201,143,.20);color:var(--green)}
+.clickable{cursor:pointer}
+.card.clickable:hover{border-color:var(--gold)}
+.hidden{display:none!important}
+.empty{border:1px dashed var(--line);border-radius:var(--radius);padding:28px;text-align:center;color:var(--muted)}
+
+/* ROTEIRO */
+.roteiro{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.route{border:1px solid var(--line-soft);border-radius:var(--radius);background:var(--card);padding:22px}
+.route h3{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.5rem;margin:0 0 4px;color:var(--silver-bright)}
+.route .rsub{color:var(--gold);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.route ol{margin:14px 0 0;padding:0;list-style:none;counter-reset:step}
+.route li{counter-increment:step;display:flex;gap:12px;padding:10px 0;border-top:1px solid var(--line-soft);font-size:.92rem;color:var(--muted)}
+.route li:first-of-type{border-top:none}
+.route li::before{content:counter(step);flex:none;width:26px;height:26px;border-radius:50%;border:1px solid var(--gold);color:var(--gold-bright);display:grid;place-items:center;font-size:.8rem;font-weight:800}
+.route li b{color:var(--silver-bright)}
+
+footer{margin-top:56px;border-top:1px solid var(--line-soft);padding-top:22px;color:var(--muted2);font-size:.82rem}
+footer .cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+footer h4{color:var(--silver);margin:0 0 8px;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase}
+footer ul{margin:0;padding-left:18px}
+footer li{margin:4px 0}
+.credit{text-align:center;margin-top:28px;color:var(--muted2)}
+.credit b{color:var(--gold)}
+
+@media (max-width:900px){ .grid{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:640px){
+  .wrap{padding:0 14px 48px}
+  .feat-grid,.roteiro,footer .cols{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  .hero{padding-top:30px}
+  .filters{margin-left:-14px;margin-right:-14px;padding-left:14px;padding-right:14px}
+}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} .chip,.buy{transition:none} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="dates">Sábado 21 · Domingo 22 de novembro de 2026</div>
+    <h1>Painel do <em>Fim de Semana</em></h1>
+    <p class="lead">Guia público com o que está acontecendo de verdade neste fim de semana na <b>capital de São Paulo, no ABC e no interior de SP</b> — do baile funk ao festival de rock, do pagode de domingo ao stand-up no ABC, com Campinas, Ribeirão Preto, Sorocaba, São José dos Campos e Campos do Jordão no roteiro. Tudo com horário, lugar, preço e fonte para conferir antes de sair.</p>
+    <span class="public-badge">Guia público · pode compartilhar e postar</span>
+    <div class="genres" aria-label="Gêneros deste fim de semana">
+      <span><i style="background:#ff8fb2"></i>Funk</span>
+      <span><i style="background:#b79cff"></i>Baladas</span>
+      <span><i style="background:#f0b35e"></i>Pagode &amp; samba</span>
+      <span><i style="background:#f08a4b"></i>Sertanejo &amp; forró</span>
+      <span><i style="background:#ff7a6b"></i>Rock</span>
+      <span><i style="background:#6bd5e1"></i>Eletrônica</span>
+      <span><i style="background:#b5d96b"></i>Rap &amp; trap</span>
+      <span><i style="background:#6bd9b0"></i>Stand-up</span>
+      <span><i style="background:#c9a86a"></i>Teatro · feiras · expos</span>
+    </div>
+    <div class="hero-rule"><span>✦</span></div>
+    <div class="stats">
+      <span class="stat"><b>74</b> programas listados</span>
+      <span class="stat gold"><b>27</b> gratuitos</span>
+      <span class="stat"><b>Capital · ABC · Interior</b> 3 regiões</span>
+      <span class="stat"><b>5</b> roteiros prontos</span>
+    </div>
+  </header>
+
+  <nav class="filters" aria-label="Filtros do painel">
+    <div class="filters-row" id="dayFilters">
+      <button class="chip day" data-day="all" aria-pressed="true">Os dois dias</button>
+      <button class="chip day" data-day="sab" aria-pressed="false">Sábado · 21</button>
+      <button class="chip day" data-day="dom" aria-pressed="false">Domingo · 22</button>
+    </div>
+    <div class="filters-row" id="catFilters" style="margin-top:8px">
+      <button class="chip" data-cat="all" aria-pressed="true">Tudo</button>
+      <button class="chip" data-cat="show" aria-pressed="false">Shows</button>
+      <button class="chip" data-cat="gratis" aria-pressed="false">Gratuitos</button>
+      <button class="chip" data-cat="feira" aria-pressed="false">Feiras</button>
+      <button class="chip" data-cat="expo" aria-pressed="false">Exposições &amp; cinema</button>
+      <button class="chip" data-cat="teatro" aria-pressed="false">Teatro</button>
+      <button class="chip" data-cat="gastro" aria-pressed="false">Gastronomia</button>
+      <button class="chip" data-cat="abc" aria-pressed="false">Só ABC</button>
+      <button class="chip" data-cat="interior" aria-pressed="false">Interior de SP</button>
+    </div>
+    <div class="filters-row" id="genreFilters" style="margin-top:8px">
+      <button class="chip genre" data-cat="funk" aria-pressed="false">Funk</button>
+      <button class="chip genre" data-cat="balada" aria-pressed="false">Baladas &amp; festas</button>
+      <button class="chip genre" data-cat="pagode" aria-pressed="false">Pagode &amp; samba</button>
+      <button class="chip genre" data-cat="sertanejo" aria-pressed="false">Sertanejo &amp; forró</button>
+      <button class="chip genre" data-cat="rock" aria-pressed="false">Rock</button>
+      <button class="chip genre" data-cat="eletronica" aria-pressed="false">Eletrônica</button>
+      <button class="chip genre" data-cat="rap" aria-pressed="false">Rap &amp; trap</button>
+      <button class="chip genre" data-cat="standup" aria-pressed="false">Stand-up</button>
+    </div>
+    <p class="filters-note">Toque para filtrar — dá para combinar dia + tipo ou dia + gênero.</p>
+  </nav>
+
+  <!-- DESTAQUES -->
+  <section id="destaques">
+    <div class="sec-head"><h2>Os <span class="gold">destaques</span></h2><span class="when">Se for escolher poucos</span></div>
+    <p class="sec-sub">Oito programas que valem a saída de casa neste fim de semana — do rock internacional ao maior baile funk da Augusta, na capital, no ABC e no interior.</p>
+    <div class="feat-grid">
+      <article class="feat ev" data-day="sab dom" data-cat="show rock">
+        <div class="kicker">Festival · Rock &amp; blues · Parque Ibirapuera</div>
+        <h3>Best of Blues and Rock</h3>
+        <p><b style="color:var(--silver-bright)">Sábado:</b> Roger Daltrey (The Who) em show exclusivo no Brasil, com Chris Isaak e Christone “Kingfish” Ingram. <b style="color:var(--silver-bright)">Domingo:</b> Eddie Vedder (Pearl Jam) e Vitor Kley — domingo já está <b>esgotado</b>; sábado tem as últimas unidades.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sáb: portões 13h15 · shows 15h15–20h &nbsp;|&nbsp; Dom: portões 14h · shows 16h–20h</span></div>
+          <div><span class="ic">⌖</span><span>Plateia externa do Auditório Ibirapuera — Av. Pedro Álvares Cabral, Vila Mariana</span></div>
+          <div><span class="ic">✦</span><span>A partir de <b>R$ 406</b> (Ticketmaster) · sábado = últimas unidades</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://cadernopop.com.br/best-of-blues-and-rock-2026-horarios-atracoes-ingressos-e-tudo-o-que-voce-precisa-saber-sobre-o-festival/" target="_blank" rel="noopener">Caderno Pop — horários e ingressos</a> · <a href="https://blog.visitesaopaulo.com/agenda-de-eventos-em-sao-paulo-segunda-quinzena-de-novembro/" target="_blank" rel="noopener">Visite São Paulo</a></p>
+      
+        <a class="buy" href="https://www.ticketmaster.com.br/event/best-of-blues-and-rock-2026" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="feat ev" data-day="sab" data-cat="show">
+        <div class="kicker">Show · Barra Funda</div>
+        <h3>Caetano Veloso — Nos Festivais</h3>
+        <p>Caetano retorna ao Espaço Unimed com a turnê que revisita os grandes festivais da carreira. A organização avisa: <b style="color:var(--silver-bright)">últimos ingressos</b>.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado · abertura 20h · show às <b>22h</b></span></div>
+          <div><span class="ic">⌖</span><span>Espaço Unimed — Rua Tagipuru, 795, Barra Funda</span></div>
+          <div><span class="ic">✦</span><span>Inteira de <b>R$ 324 a R$ 1.176</b> conforme o setor (meia = metade)</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.ticket360.com.br/evento/33579/ingressos-para-caetano-nos-festivais" target="_blank" rel="noopener">Ticket360 — página oficial do evento</a></p>
+      
+        <a class="buy" href="https://www.ticket360.com.br/evento/33579/ingressos-para-caetano-nos-festivais" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="feat ev" data-day="sab dom" data-cat="gratis feira">
+        <div class="kicker">Gratuito · Pacaembu</div>
+        <h3>Orgulho Nerd SP</h3>
+        <p>O maior festival geek gratuito do estado estreia na Arena Pacaembu: games, VR, arena medieval, cosplay, quadrinhos e shows. Sábado tem <b style="color:var(--silver-bright)">Supercombo (20h30)</b>; domingo, <b style="color:var(--silver-bright)">Miura Jam (17h)</b>, com trilhas de animes e games.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sáb 12h–22h · Dom 10h–20h</span></div>
+          <div><span class="ic">⌖</span><span>Mercado Livre Arena Pacaembu — Praça Charles Miller, Pacaembu</span></div>
+          <div><span class="ic">✦</span><span><b>Gratuito</b> — precisa de credenciamento prévio no site oficial (aberto desde 16/11)</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.gamersegames.com.br/2026/11/17/com-entrada-gratuita-orgulho-nerd-sp-divulga-programacao-completa-de-2026/" target="_blank" rel="noopener">Gamers &amp; Games — programação completa (17/11/2026)</a></p>
+      
+        <a class="buy free" href="https://www.gamersegames.com.br/2026/11/17/com-entrada-gratuita-orgulho-nerd-sp-divulga-programacao-completa-de-2026/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="feat ev" data-day="sab dom" data-cat="gastro gratis abc">
+        <div class="kicker">No ABC · Santo André</div>
+        <h3>Festival Gastronômico Medieval</h3>
+        <p>Bem pertinho: gastronomia temática, música ao vivo, combates medievais, personagens, jogos e oficinas no estacionamento do Carrefour Santo André — os três dias do feriadão, com entrada gratuita.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sáb e Dom · <b>12h às 22h</b></span></div>
+          <div><span class="ic">⌖</span><span>Carrefour Santo André — Av. Pedro Américo, 23, Vila Humaitá, Santo André</span></div>
+          <div><span class="ic">✦</span><span><b>Gratuito</b> — retirar ingresso pela Sympla</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://portalabcpaulista.com.br/carrefour-santo-andre-recebe-festival-gastronomico-medieval/" target="_blank" rel="noopener">Portal ABC Paulista</a></p>
+      
+        <a class="buy free" href="https://www.sympla.com.br/evento/festival-gastronomico-medieval-santo-andre/3630288" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="feat ev" data-day="dom" data-cat="show gratis interior rap">
+        <div class="kicker">Interior · Campinas · Rap &amp; hip hop · Gratuito</div>
+        <h3>13º Campinas Hip Hop Festival</h3>
+        <p>Nove horas de hip hop gratuito no domingo, na Estação Cultura: <b style="color:var(--silver-bright)">Edi Rock, Dexter, Rashid, KL Jay, MC Soffia, MC Luanna, Kyan, Tasha &amp; Tracie, Budah</b> e artistas de Campinas. Com intérpretes de Libras e doação voluntária de 1 kg de alimento.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo · <b>13h às 22h</b></span></div>
+          <div><span class="ic">⌖</span><span>Estação Cultura — Praça Mal. Floriano Peixoto, Centro, Campinas</span></div>
+          <div><span class="ic">✦</span><span><b>Gratuito</b></span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://rmcurgente.com.br/2026/11/12/estacao-cultura-recebe-13a-edicao-do-campinas-hip-hop-festival-no-dia-22-de-novembro/" target="_blank" rel="noopener">RMC Urgente — Campinas Hip Hop Festival (12/11/2026)</a></p>
+      
+        <a class="buy free" href="https://rmcurgente.com.br/2026/11/12/estacao-cultura-recebe-13a-edicao-do-campinas-hip-hop-festival-no-dia-22-de-novembro/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="feat ev" data-day="sab" data-cat="gastro show interior">
+        <div class="kicker">Interior · Ribeirão Preto</div>
+        <h3>IPA Day Brasil 2026</h3>
+        <p>A etapa que encerra o circuito nacional da cerveja IPA: <b style="color:var(--silver-bright)">8 shows em 2 palcos</b>, feira de economia criativa e as cervejas mais pedidas das 5 etapas do ano, no centro antigo de Ribeirão Preto.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado · <b>14h às 22h</b> (BeerGeek a partir das 13h)</span></div>
+          <div><span class="ic">⌖</span><span>Armazém Baixada — Rua Duque de Caxias, 141, Centro, Ribeirão Preto</span></div>
+          <div><span class="ic">✦</span><span>Ingressos limitados, a partir de <b>R$ 59,90</b></span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.ipaday.com.br/index.html" target="_blank" rel="noopener">IPA Day Brasil — site oficial</a></p>
+      
+        <a class="buy" href="https://www.ipaday.com.br/index.html" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="feat ev g-funk" data-day="sab" data-cat="show funk balada">
+        <div class="kicker">Funk · Open bar · Rua Augusta</div>
+        <h3>FUNK-ME — o maior baile funk da Augusta</h3>
+        <p>A FUNK-ME volta ao Augusta HiFi com o maior open bar da rua mais boêmia da cidade: no som, <b style="color:var(--silver-bright)">funk nostalgia, mandelão, 150 BPM, MTG, automotivo, bruxaria e pop funk</b> até o amanhecer. É o baile para quem quer dançar a noite inteira — e os lotes viram sem aviso.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado · a partir das <b>23h</b>, até o amanhecer</span></div>
+          <div><span class="ic">⌖</span><span>Augusta HiFi — Rua Augusta, 591, Consolação</span></div>
+          <div><span class="ic">✦</span><span>Pista 1º lote <b>R$ 50</b> (open bar) · só maiores de 18 anos</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.sympla.com.br/evento/funk-me-o-maior-open-bar-da-rua-augusta-21-11-augusta-hifi/3627413" target="_blank" rel="noopener">Sympla — página oficial do evento</a></p>
+      
+        <a class="buy" href="https://www.sympla.com.br/evento/funk-me-o-maior-open-bar-da-rua-augusta-21-11-augusta-hifi/3627413" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="feat ev g-eletronica" data-day="sab" data-cat="show eletronica balada">
+        <div class="kicker">Eletrônica · Techno · Mooca</div>
+        <h3>The Grid Unreal — estreia no Brasil</h3>
+        <p>A festa que virou referência do techno underground paulistano recebe a <b style="color:var(--silver-bright)">estreia brasileira da UNREAL</b> no Komplexo Tempo. Setor único — sem VIP, sem backstage, todo mundo na mesma pista — e política <b style="color:var(--silver-bright)">sem celular</b>: a noite é para viver, não para filmar.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado, <b>21/11</b> · a partir das <b>22h</b>, atravessando a madrugada</span></div>
+          <div><span class="ic">⌖</span><span>Komplexo Tempo — Av. Henry Ford, 511, Parque da Mooca</span></div>
+          <div><span class="ic">✦</span><span>Lote 5: meia social <b>R$ 260</b> (com 1 kg de alimento) · inteira <b>R$ 520</b> — venda exclusiva pela Ingresse</span></div>
+        </div>
+        <p class="src">Fonte: <a href="http://wegoout.com.br/eventos/the-grid-unreal" target="_blank" rel="noopener">WeGoOut — guia completo do evento</a></p>
+      
+        <a class="buy" href="https://ingresse.com/thegrid-unreal/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+    </div>
+  </section>
+
+  <!-- SÁBADO -->
+  <section id="sabado">
+    <div class="sec-head"><h2>Sábado, <span class="gold">21 de novembro</span></h2><span class="when">Dia cheio</span></div>
+    <p class="sec-sub">Do festival gratuito de manhã ao baile funk que varre a madrugada — o sábado concentra a maior parte da agenda: shows, baladas, sertanejo, stand-up e festas na capital, no ABC e no interior.</p>
+    <div class="grid" id="gridSab">
+
+      <article class="card ev" data-day="sab" data-cat="gratis">
+        <div class="card-top"><span class="tag free">Gratuito</span><span class="tag">Festival jovem</span><span class="price free">Grátis</span></div>
+        <h3>DNJ Fest 2026</h3>
+        <p class="desc">Festival da Arquidiocese de São Paulo com música ao vivo o dia inteiro — apresentação das bandas finalistas do concurso de música autoral.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span><b>8h às 20h</b></span></div>
+          <div><span class="ic">⌖</span><span>Centro Esportivo Tietê — Av. Santos Dumont, 843, Luz</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.dnjfest.com.br/" target="_blank" rel="noopener">dnjfest.com.br (oficial)</a> · ingressos gratuitos pela Sympla</p>
+      
+        <a class="buy free" href="https://www.dnjfest.com.br/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="sab" data-cat="feira gastro gratis">
+        <div class="card-top"><span class="tag">Feira</span><span class="tag">Gastronomia</span><span class="price free">Grátis</span></div>
+        <h3>Feira Beat e Arte — Mooca</h3>
+        <p class="desc">Mais de 70 expositores de design, moda e economia criativa, cerveja artesanal e comida de rua. Sábado tem Rock BR Trio às 15h30 e DJ Klaus Porlan.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span><b>10h às 20h</b></span></div>
+          <div><span class="ic">⌖</span><span>Rua Catarina Braida, 38 (esq. Rua Taquari), Mooca</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://vozdobairro.com.br/noticia/76775/mooca-recebe-feira-que-reune-gastronomia-musica-e-economia-criativa-dias-20-21-e-22-de-novembro" target="_blank" rel="noopener">Voz do Bairro (16/11/2026)</a></p>
+      
+        <a class="buy free" href="https://vozdobairro.com.br/noticia/76775/mooca-recebe-feira-que-reune-gastronomia-musica-e-economia-criativa-dias-20-21-e-22-de-novembro" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-rock" data-day="sab" data-cat="show feira rock">
+        <div class="card-top"><span class="tag show">Shows</span><span class="tag g-rock">Rock</span><span class="tag">Feira</span><span class="price">a partir de R$ 100</span></div>
+        <h3>Tattoo Week — dia do rock</h3>
+        <p class="desc">14ª edição da maior feira de tatuagem do país, com 2.500 artistas e 710 estandes. Nos palcos de sábado: <b>Fresno, Dead Fish, Bad Luv e Violett</b>, a partir das 17h.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span><b>12h às 22h</b> · shows a partir das 17h</span></div>
+          <div><span class="ic">⌖</span><span>Expo Center Norte — Rua José Bernardo Pinto, 333, Vila Guilherme</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://universozn.com.br/tattoo-week-2026-expo-center-norte/" target="_blank" rel="noopener">Universo ZN</a> · preço: <a href="https://blog.visitesaopaulo.com/agenda-de-eventos-em-sao-paulo-segunda-quinzena-de-novembro/" target="_blank" rel="noopener">Visite São Paulo</a> (Ticket360)</p>
+      
+        <a class="buy" href="https://www.ticket360.com.br/evento/641/ingressos-para-tattoo-week-sao-paulo-2026/composto" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="sab" data-cat="gratis">
+        <div class="card-top"><span class="tag free">Gratuito</span><span class="tag">Cultura afro</span><span class="price free">Grátis</span></div>
+        <h3>Festival Soul Afro — Museu Afro Brasil</h3>
+        <p class="desc">O museu celebra 22 anos com samba, capoeira, maracatu, aulas abertas e a Feira Ìyálọ́jà (moda, design e gastronomia). Sábado, às 15h30: baile <b>Black Charme</b>.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span><b>10h às 18h</b></span></div>
+          <div><span class="ic">⌖</span><span>Museu Afro Brasil — Parque Ibirapuera, Portão 10</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://blog.visitesaopaulo.com/agenda-de-eventos-em-sao-paulo-segunda-quinzena-de-novembro/" target="_blank" rel="noopener">Visite São Paulo — agenda da quinzena</a></p>
+      
+        <a class="buy free" href="https://www.museuafrobrasil.org.br/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="sab" data-cat="gratis">
+        <div class="card-top"><span class="tag free">Gratuito</span><span class="tag">Rua · Centro</span><span class="price free">Grátis</span></div>
+        <h3>Festa Preta no Anhangabaú</h3>
+        <p class="desc">Programação de rua do Festival da Consciência Negra: Equipe Black Mad na Av. Ipiranga (11h–15h), Festa Preta no Vale do Anhangabaú (13h–22h) e Afrogroove na Rua Dom José de Barros (17h–21h).</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span><b>11h às 22h</b> (vários pontos do Centro)</span></div>
+          <div><span class="ic">⌖</span><span>Vale do Anhangabaú e Av. Ipiranga, Centro</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://buscadanca.com.br/noticias/consciencia-negra-sp-bailes-black-samba-rock-centro/" target="_blank" rel="noopener">Busca Dança — guia do feriadão</a></p>
+      
+        <a class="buy free" href="https://buscadanca.com.br/noticias/consciencia-negra-sp-bailes-black-samba-rock-centro/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="sab" data-cat="teatro show">
+        <div class="card-top"><span class="tag">Teatro</span><span class="tag show">Musical</span><span class="price">a partir de R$ 25*</span></div>
+        <h3>Gil — Andar com Fé, o musical</h3>
+        <p class="desc">Biografia musical de Gilberto Gil dirigida por Miguel Falabella, nas últimas semanas de temporada (termina 29/11). *R$ 25 é a meia do Balcão B; inteira a partir de R$ 50.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sessões às <b>16h e 20h</b> · 2h20 + intervalo</span></div>
+          <div><span class="ic">⌖</span><span>Teatro Santander — Av. Pres. Juscelino Kubitschek, 2041 (JK Iguatemi)</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.midiorama.com/faltam-30-sessoes-musical-sobre-gilberto-gil-se-despede-de-sao-paulo-em-29-de-novembro" target="_blank" rel="noopener">Midiorama</a> · ingressos pela Sympla</p>
+      
+        <a class="buy" href="https://bileto.sympla.com.br/event/115256/d/360382" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-sertanejo" data-day="sab" data-cat="show sertanejo">
+        <div class="card-top"><span class="tag show">Show</span><span class="tag g-sertanejo">Forró &amp; rock nordestino</span><span class="price">R$ 75 a R$ 240</span></div>
+        <h3>Cordel do Fogo Encantado</h3>
+        <p class="desc">A banda pernambucana revive na íntegra o álbum de estreia que marcou sua trajetória — noite de poesia, maracatu e rock nordestino.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado às <b>20h</b></span></div>
+          <div><span class="ic">⌖</span><span>Casa Natura Musical — Rua Artur de Azevedo, 2134, Pinheiros</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://somdefita.com/cordel-do-fogo-encantado-revive-album-de-estreia/" target="_blank" rel="noopener">Som de Fita (10/11/2026)</a> · ingressos pela Sympla</p>
+      
+        <a class="buy" href="https://bileto.sympla.com.br/event/125583/d/407784" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-balada" data-day="sab" data-cat="show balada">
+        <div class="card-top"><span class="tag show">Show</span><span class="tag g-balada">Neoperreo</span><span class="price">via Sympla</span></div>
+        <h3>Six Sex — turnê ULTRA</h3>
+        <p class="desc">A cantora argentina de neoperreo apresenta o álbum “ULTRA” em noite única na Liberdade.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Abertura 19h · show às <b>21h</b></span></div>
+          <div><span class="ic">⌖</span><span>Cine Joia — Praça Carlos Gomes, 82, Liberdade</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://cadernopop.com.br/six-sex-quem-e-a-cantora-argentina-que-se-apresenta-em-sao-paulo-em-novembro/" target="_blank" rel="noopener">Caderno Pop (10/11/2026)</a></p>
+      
+        <a class="buy" href="https://cadernopop.com.br/six-sex-quem-e-a-cantora-argentina-que-se-apresenta-em-sao-paulo-em-novembro/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-pagode" data-day="sab" data-cat="show pagode">
+        <div class="card-top"><span class="tag show">Show</span><span class="tag g-pagode">Samba &amp; pagode</span><span class="price">VIP grátis até 23h</span></div>
+        <h3>Monobloco na Audio</h3>
+        <p class="desc">O bloco carioca mais famoso do país esquenta o pré-carnaval paulistano na Barra Funda.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado · casa abre às <b>21h</b> · show a partir das <b>22h</b></span></div>
+          <div><span class="ic">⌖</span><span>Audio — Av. Francisco Matarazzo, 694, Barra Funda</span></div>
+          <div><span class="ic">✦</span><span>Ensaio com bateria completa · lista VIP com pista gratuita até 23h · 18 anos</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://alicepelomundo.com.br/o-que-fazer-em-sao-paulo-em-novembro/" target="_blank" rel="noopener">Alice pelo Mundo — guia de novembro (atualizado 11/11/2026)</a></p>
+      
+        <a class="buy" href="https://soufa.com.br/lista-vip-monobloco-audio-21-11-2026/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="sab" data-cat="feira">
+        <div class="card-top"><span class="tag">Feira</span><span class="tag">Artesanato</span><span class="price free">Grátis</span></div>
+        <h3>Feira de Artesanato — Interlagos</h3>
+        <p class="desc">Cerca de 10 expositores do programa Mãos e Mentes Paulistanas com peças autorais — boa para garimpar presentes de fim de ano sem shopping lotado.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado <b>11h às 19h</b> (domingo até 17h)</span></div>
+          <div><span class="ic">⌖</span><span>Leroy Merlin Interlagos — Av. Interlagos, 2255, Jardim Umuarama</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://saopaulosecreto.com/feiras-em-sp-para-garimpar-presentes-de-natal/" target="_blank" rel="noopener">São Paulo Secreto — circuito de feiras de novembro</a></p>
+      
+        <a class="buy free" href="https://saopaulosecreto.com/feiras-em-sp-para-garimpar-presentes-de-natal/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="sab" data-cat="feira">
+        <div class="card-top"><span class="tag">Feira</span><span class="price">a partir de R$ 167,50</span></div>
+        <h3>Expo Cannabis Brasil</h3>
+        <p class="desc">Feira de negócios, ciência e cultura canábica com expositores, palestras e debates — segundo dia do evento (vai até domingo).</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span><b>20 a 22/11</b> · visitação das <b>11h às 21h</b> · só maiores de 18 anos</span></div>
+          <div><span class="ic">⌖</span><span>São Paulo Expo — Rod. dos Imigrantes, km 1,5, Água Funda</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://blog.visitesaopaulo.com/agenda-de-eventos-em-sao-paulo-segunda-quinzena-de-novembro/" target="_blank" rel="noopener">Visite São Paulo</a> · ingressos pela Sympla</p>
+      
+        <a class="buy" href="https://www.expocannabisbrasil.com/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="sab" data-cat="feira abc">
+        <div class="card-top"><span class="tag abc">ABC</span><span class="tag">Família</span><span class="price free">Grátis</span></div>
+        <h3>Papai Noel no Grand Plaza — Santo André</h3>
+        <p class="desc">O “Grand Natal Encantado” já começou: Papai Noel recebe as famílias na Praça de Alimentação, com paradas natalinas pelos corredores do shopping.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado <b>12h às 21h</b> · domingo 13h às 20h</span></div>
+          <div><span class="ic">⌖</span><span>Grand Plaza — Av. Industrial, 600, Santo André</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://passeioskids.com/onde-ver-papai-noel-em-sp-passeios-kids/" target="_blank" rel="noopener">Passeios Kids — agenda de Natal 2026</a></p>
+      
+        <a class="buy free" href="https://www.grandplazashopping.com.br/evento/grand-natal-encantado/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="sab" data-cat="teatro interior">
+        <div class="card-top"><span class="tag interior">Interior</span><span class="tag">Dança · Campinas</span><span class="price">R$ 80 a R$ 160</span></div>
+        <h3>Ventos do Oeste — Campinas</h3>
+        <p class="desc">Espetáculo da Karen Righetto Escola de Dança dentro do projeto AMDC – A Dança em Movimento, que reúne cerca de 1.500 artistas no Teatro Castro Mendes.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado às <b>16h e 20h</b> (domingo às 15h e 19h)</span></div>
+          <div><span class="ic">⌖</span><span>Teatro Municipal José de Castro Mendes, Campinas</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://rmcurgente.com.br/2026/11/17/associacao-movimento-danca-campinas-promove-diversos-espetaculos-artisticos-ate-6-de-dezembro/" target="_blank" rel="noopener">RMC Urgente (17/11/2026)</a> · ingressos pela Sympla</p>
+      
+        <a class="buy" href="https://bileto.sympla.com.br/event/129297" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="sab" data-cat="expo feira gratis interior">
+        <div class="card-top"><span class="tag interior">Interior</span><span class="tag">Exposição · Campinas</span><span class="price free">Grátis</span></div>
+        <h3>27ª Exposição Nacional de Orquídeas</h3>
+        <p class="desc">Cerca de 37 associações de SP e MG com orquídeas premiadas, venda de plantas e cursos gratuitos de cultivo às 10h e às 14h. Estacionamento gratuito e praça de alimentação.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado <b>9h às 18h</b> (domingo até 16h)</span></div>
+          <div><span class="ic">⌖</span><span>Instituto Cultural Nipo Brasileiro — Rua Camargo Paes, 118, Jardim Guanabara, Campinas</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://redeutv.com.br/campinas-recebe-a-27a-exposicao-nacional-de-orquideas-de-20-a-22-de-novembro" target="_blank" rel="noopener">Rede UTV News (16/11/2026)</a></p>
+      
+        <a class="buy free" href="https://redeutv.com.br/campinas-recebe-a-27a-exposicao-nacional-de-orquideas-de-20-a-22-de-novembro" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="sab" data-cat="show interior">
+        <div class="card-top"><span class="tag interior">Interior</span><span class="tag show">Show · Ribeirão Preto</span><span class="price">via Ticketmaster</span></div>
+        <h3>Beto Guedes e 14 Bis</h3>
+        <p class="desc">Encontro histórico da MPB mineira: Beto Guedes e a banda 14 Bis revisitam clássicos que atravessaram gerações, em noite única no RibeirãoShopping.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado às <b>21h</b> · abertura da casa 19h</span></div>
+          <div><span class="ic">⌖</span><span>Multiplan Hall RibeirãoShopping — Av. Cel. Fernando Ferreira Leite, 1540, Ribeirão Preto</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://portalyoba.com.br/beto-guedes-e-14-bis-prometem-noite-historica-de-classicos-da-musica-brasileira-neste-sabado-em-ribeirao-preto/" target="_blank" rel="noopener">Portal Yoba (16/11/2026)</a></p>
+      
+        <a class="buy" href="https://www.ticketmaster.com.br/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="sab" data-cat="expo gratis interior">
+        <div class="card-top"><span class="tag interior">Interior</span><span class="tag">Cinema · São José dos Campos</span><span class="price free">Grátis</span></div>
+        <h3>BikeCine — cinema a pedaladas</h3>
+        <p class="desc">Cinema itinerante movido a bicicletas, só com energia gerada pelo público: sessão de curtas com acessibilidade às 18h30 e o longa “Divertida Mente 2” às 19h30, no estacionamento da Decathlon.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado a partir das <b>18h30</b></span></div>
+          <div><span class="ic">⌖</span><span>Decathlon São José dos Campos — etapa de 21/11 do circuito</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://rmcurgente.com.br/2026/11/03/bikecine-faz-sessao-gratuita-em-campinas/" target="_blank" rel="noopener">RMC Urgente — circuito BikeCine (03/11/2026)</a></p>
+      
+        <a class="buy free" href="https://bikecine.com.br/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-funk" data-day="sab" data-cat="show funk balada">
+        <div class="card-top"><span class="tag g-funk">Funk</span><span class="tag">Baile · 18+</span><span class="price">porta R$ 120</span></div>
+        <h3>A História do Funk — MC Dricka</h3>
+        <p class="desc">O baile nostalgia que virou franquia recebe a rainha dos fluxos: <b>MC Dricka</b> ao vivo, com Biviz e convidados, pista ampla e fumódromo no Fabrique Club, do ladinho do metrô Barra Funda. Só para maiores de 18 anos.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado <b>23h às 6h</b></span></div>
+          <div><span class="ic">⌖</span><span>Fabrique Club — Rua Barra Funda, 1071, Barra Funda</span></div>
+        </div>
+        <p class="src">Fonte: <a href="http://sympla.com.br/evento/a-historia-do-funk-apresenta-mc-dricka-o-seu-baile-funk-nostalgia-21-11-fabrique/3600405?d=comunidade" target="_blank" rel="noopener">Sympla — página oficial do evento</a></p>
+      
+        <a class="buy" href="http://sympla.com.br/evento/a-historia-do-funk-apresenta-mc-dricka-o-seu-baile-funk-nostalgia-21-11-fabrique/3600405?d=comunidade" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-funk" data-day="sab" data-cat="funk balada">
+        <div class="card-top"><span class="tag g-funk">Funk</span><span class="tag">Vila Madalena</span><span class="price">VIP até 0h</span></div>
+        <h3>TILT no NOLA — funk a noite toda</h3>
+        <p class="desc">Duas pistas na Vila Madalena: funk a noite toda na principal e funk, trap e hits dançantes na externa. Entrada VIP até meia-noite; depois, R$ 30 (seco) ou R$ 60 (consumação).</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado <b>22h às 5h</b></span></div>
+          <div><span class="ic">⌖</span><span>NOLA — Rua Mourato Coelho, 1156, Vila Madalena</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://sympla.com.br/evento/nola-apresenta-t-i-l-t---2111/3647975" target="_blank" rel="noopener">Sympla — página oficial do evento</a></p>
+      
+        <a class="buy" href="https://sympla.com.br/evento/nola-apresenta-t-i-l-t---2111/3647975" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-funk" data-day="sab" data-cat="funk balada">
+        <div class="card-top"><span class="tag g-funk">Funk</span><span class="tag">Zona Sul</span><span class="price">via Sympla</span></div>
+        <h3>Festa da Espuma — Parelheiros</h3>
+        <p class="desc">Baile funk com espuma, bebidas e atrações especiais a noite toda no extremo sul da cidade: no comando, <b>DJ FP</b> e o <b>Grupo Quem Topa?</b>. Programa de quem é da quebrada e de quem quer conhecer a cena de verdade.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado <b>22h às 6h</b></span></div>
+          <div><span class="ic">⌖</span><span>Jardim Santa Fé, Parelheiros — zona sul de SP</span></div>
+          <div><span class="ic">✦</span><span>Caipirinha e gin a R$ 10 até meia-noite · ingressos antecipados pela Sympla</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.sympla.com.br/evento/festa-da-espuma/3644601" target="_blank" rel="noopener">Sympla — página oficial do evento</a></p>
+      
+        <a class="buy" href="https://www.sympla.com.br/evento/festa-da-espuma/3644601" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-funk" data-day="sab" data-cat="funk eletronica balada">
+        <div class="card-top"><span class="tag g-funk">Funk</span><span class="tag g-eletronica">Eletrônica</span><span class="price">via Sympla</span></div>
+        <h3>COF COF Baile — edição Sunset</h3>
+        <p class="desc">“A melhor resenha escondida da cidade” em edição especial de fim de tarde num rooftop inédito: começa com o pôr do sol e segue com DJs de funk, eletrônico e cultura de rua até de madrugada. Line-up anunciado na página do evento.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado <b>15h às 3h</b></span></div>
+          <div><span class="ic">⌖</span><span>Rooftop em São Paulo — endereço ainda não divulgado pela produção</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.sympla.com.br/evento/cof-cof-baile---sunset/3652070" target="_blank" rel="noopener">Sympla — página oficial do evento</a></p>
+      
+        <a class="buy" href="https://www.sympla.com.br/evento/cof-cof-baile---sunset/3652070" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-balada" data-day="sab" data-cat="balada funk">
+        <div class="card-top"><span class="tag g-balada">Balada</span><span class="tag">R&amp;B · Hip hop</span><span class="price">via Sympla</span></div>
+        <h3>Love &amp; Liquor Experience — Birds House</h3>
+        <p class="desc">Noite de R&amp;B, love songs, hip hop, afrobeats, funk e pagodão baiano em Pinheiros: Muito Louc4 esquenta a pista com funk carioca e dancehall, e o Fresh Prince of Bahia fecha a noite com os sons da Bahia.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado <b>22h às 4h</b></span></div>
+          <div><span class="ic">⌖</span><span>Birds House — Rua Amaro Cavalheiro, 168, Pinheiros</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.sympla.com.br/evento/love-liquor-experience-birds-house/3642138" target="_blank" rel="noopener">Sympla — página oficial do evento</a></p>
+      
+        <a class="buy" href="https://www.sympla.com.br/evento/love-liquor-experience-birds-house/3642138" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-balada" data-day="sab" data-cat="balada">
+        <div class="card-top"><span class="tag g-balada">Balada</span><span class="tag">Reggaeton · 18+</span><span class="price">a partir de R$ 25</span></div>
+        <h3>Gasolina: Ayer y Hoy — reggaeton no The Atro</h3>
+        <p class="desc">Noite 100% reggaeton e música latina na Bela Vista, celebrando a história do gênero que dominou as pistas do mundo. Lote promocional a R$ 25; na hora, sem lista, R$ 40. Aniversariantes de novembro e dezembro entram VIP com acompanhante (lista limitada).</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado <b>22h às 5h</b> · só maiores de 18 anos</span></div>
+          <div><span class="ic">⌖</span><span>The Atro — Rua Rui Barbosa, 201, Bela Vista</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.sympla.com.br/event__3653720" target="_blank" rel="noopener">Sympla — página oficial do evento</a></p>
+      
+        <a class="buy" href="https://www.sympla.com.br/event__3653720" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-balada" data-day="sab" data-cat="balada pagode show">
+        <div class="card-top"><span class="tag g-balada">Festa sunset</span><span class="tag g-pagode">Pagode</span><span class="price">sunset · +8h de festa</span></div>
+        <h3>PAQUERA — última edição de 2026</h3>
+        <p class="desc">A festa que conecta gente pela música se despede de 2026 em formato sunset no Varanda Estaiada: mais de 8 horas com <b>Delacruz, Gaab</b>, o Pagode Paquera Especial Anos 90, Chai &amp; Gi e Coruja &amp; PeeJay.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado a partir das <b>14h</b></span></div>
+          <div><span class="ic">⌖</span><span>Varanda Estaiada — Av. Dr. Chucri Zaidan, 155, Cidade Jardim</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://fashionlike.com.br/paquera-anuncia-ultima-edicao-de-2026-no-varanda-estaiada-com-delacruz-gaab-e-programacao-especial/" target="_blank" rel="noopener">Fashion Like — anúncio oficial da edição</a></p>
+      
+        <a class="buy" href="https://fashionlike.com.br/paquera-anuncia-ultima-edicao-de-2026-no-varanda-estaiada-com-delacruz-gaab-e-programacao-especial/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-balada" data-day="sab" data-cat="balada gratis">
+        <div class="card-top"><span class="tag free">Gratuito</span><span class="tag g-balada">Balada</span><span class="price free">Grátis</span></div>
+        <h3>Balada da Caru — noite só para mães</h3>
+        <p class="desc">Uma balada feita para mães dançarem, conhecerem outras mulheres e terem uma noite só delas na Vila Madalena — com mimos de marcas parceiras para levar para casa. Entrada gratuita, com inscrição prévia pela Sympla; vagas limitadas e evento exclusivo para adultos.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado a partir das <b>20h</b></span></div>
+          <div><span class="ic">⌖</span><span>Praça A — Rua Aspicuelta, 527, Vila Madalena</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://itmae.com.br/vida-de-mae/novembro-tem-agenda-especial-para-maes-em-sao-paulo" target="_blank" rel="noopener">It Mãe — agenda de novembro</a> · <a href="https://cangurunews.com.br/balada-da-caru-conheca-as-marcas-parceiras-e-os-mimos-que-voce-vai-levar-para-casa/" target="_blank" rel="noopener">Canguru News</a></p>
+      
+        <a class="buy free" href="https://www.sympla.com.br/evento/balada-da-caru/3630413?referrer=cangurunews.com.br&referrer=cangurunews.com.br" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-eletronica" data-day="sab" data-cat="balada eletronica">
+        <div class="card-top"><span class="tag g-eletronica">Eletrônica</span><span class="tag">Mooca</span><span class="price">R$ 20 a R$ 40</span></div>
+        <h3>A Saga no Dom Maron — noite de DJs</h3>
+        <p class="desc">Maratona eletrônica na Mooca com seis DJs em sequência: Maron (19h), Caio Braga (21h), DJ Suh (22h), Leona Marco (23h), Robz (1h) e Fasano (3h). Ingresso: R$ 40 (masculino) e R$ 20 (feminino), segundo a divulgação do evento.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado <b>19h às 5h</b></span></div>
+          <div><span class="ic">⌖</span><span>Dom Maron — Rua Florianópolis, 564, Mooca</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.instagram.com/reel/Dfw1Z23C134/" target="_blank" rel="noopener">A Saga (@asaga.afesta) — divulgação oficial</a></p>
+      
+        <a class="buy" href="https://www.instagram.com/reel/Dfw1Z23C134/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-sertanejo" data-day="sab" data-cat="show sertanejo">
+        <div class="card-top"><span class="tag g-sertanejo">Forró &amp; sofrência</span><span class="tag show">Show</span><span class="price">via Fever</span></div>
+        <h3>Seu Desejo + Silvânia &amp; Berg — Terra SP</h3>
+        <p class="desc">Noite de forró e sofrência na casa que virou templo do gênero em SP: a dupla <b>Seu Desejo</b> (Yara Tchê e Alessandro) divide o palco com <b>Silvânia &amp; Berg</b> — repertório para cantar com a mão no peito do começo ao fim.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado · portões às <b>21h</b></span></div>
+          <div><span class="ic">⌖</span><span>Terra SP — Av. Salim Antônio Curiati, 160, São Paulo</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.instagram.com/p/DfvOpzBm9ZX/" target="_blank" rel="noopener">Terra SP (@terrasp_) — divulgação oficial</a> · ingressos pela Fever</p>
+      
+        <a class="buy" href="https://www.instagram.com/p/DfvOpzBm9ZX/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-rock" data-day="sab" data-cat="show rock">
+        <div class="card-top"><span class="tag g-rock">Rock</span><span class="tag">Tributo ao Queen</span><span class="price">via Eventim</span></div>
+        <h3>Queen Legend — O Legado de Freddie Mercury</h3>
+        <p class="desc">Tributo ao Queen no intimista Blue Note, na Avenida Paulista. Atenção: a produção <b>antecipou o show das 22h30 para as 20h</b> — quem comprou com o horário antigo não precisa trocar o ingresso.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado às <b>20h</b> (horário novo)</span></div>
+          <div><span class="ic">⌖</span><span>Blue Note São Paulo — Av. Paulista, 2073, 2º andar, Consolação</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://staging3.eventim.com.br/artist/blue-note-sp/queen-legend-o-legado-de-freddie-mercury-4271982/" target="_blank" rel="noopener">Eventim — comunicado oficial de mudança de horário</a></p>
+      
+        <a class="buy" href="https://staging3.eventim.com.br/artist/blue-note-sp/queen-legend-o-legado-de-freddie-mercury-4271982/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-rock" data-day="sab" data-cat="show rock">
+        <div class="card-top"><span class="tag g-rock">Rock · Punk</span><span class="tag show">Show</span><span class="price">a partir de R$ 60</span></div>
+        <h3>Dead Fish + Aléxia — Juventus Live Hall</h3>
+        <p class="desc">Noite pesada na Mooca: os veteranos do hardcore <b>Dead Fish</b> sobem ao palco às 19h e a cantora <b>Aléxia</b> fecha a noite às 22h, na casa de shows do Clube Atlético Juventus.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado · Dead Fish <b>19h</b> · Aléxia <b>22h</b></span></div>
+          <div><span class="ic">⌖</span><span>Juventus Live Hall — Rua Juventus, 690, Mooca</span></div>
+          <div><span class="ic">✦</span><span>Festival Retrô 2Mil · portões às 18h · ingressos pela Ticket360 · 18 anos</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.bandsintown.com/pt/c/santo-andre-brazil/all-dates/genre/punk?came_from=253&utm_medium=web&utm_source=venue_page&utm_campaign=genre_link" target="_blank" rel="noopener">Bandsintown — agenda de shows</a></p>
+      
+        <a class="buy" href="https://www.ticket360.com.br/evento/34062/ingressos-para-retro-2-mil-com-dead-fish-hevo84-marcelo-strike-e-hateen" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-standup" data-day="sab" data-cat="standup teatro">
+        <div class="card-top"><span class="tag g-standup">Stand-up</span><span class="tag">Humor</span><span class="price">R$ 35 a R$ 120</span></div>
+        <h3>Fábio Rabin — “Séloko”</h3>
+        <p class="desc">O novo solo de Fábio Rabin transforma os desafios da paternidade em matéria-prima de piada, em apresentação única numa das maiores casas de espetáculo da zona sul.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado às <b>21h</b> · portões 19h</span></div>
+          <div><span class="ic">⌖</span><span>Tokio Marine Hall — Rua Bragança Paulista, 1281, Várzea de Baixo</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://bcfblogculturaefutebol.blogspot.com/search/label/stand%20up%20comedy" target="_blank" rel="noopener">BCF — Blog Cultura e Futebol</a> · valores e serviço: Portal Mundo dos Famosos — ingressos pela Ticketmaster, meia a partir de R$ 35</p>
+      
+        <a class="buy" href="https://www.ticketmaster.com.br/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-standup" data-day="sab" data-cat="standup teatro">
+        <div class="card-top"><span class="tag g-standup">Stand-up</span><span class="tag">18 anos</span><span class="price">R$ 29,90</span></div>
+        <h3>André Santi — Hillarius Comedy Tatuapé</h3>
+        <p class="desc">Noite de stand-up na maior casa de comédia da zona leste, com preço de Black Friday: ingresso promocional a R$ 29,90. Classificação: 18 anos.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado · casa abre <b>19h30</b> · show às <b>21h</b></span></div>
+          <div><span class="ic">⌖</span><span>Hillarius Comedy SP — Av. Salim Farah Maluf, 1850, Tatuapé</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://ticketnamao.com.br/produto/blackfriday-andre-santi-sp-21-nov-19h30/" target="_blank" rel="noopener">Ticket na Mão — página oficial do evento</a></p>
+      
+        <a class="buy" href="https://ticketnamao.com.br/produto/blackfriday-andre-santi-sp-21-nov-19h30/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-standup" data-day="sab" data-cat="standup teatro abc">
+        <div class="card-top"><span class="tag abc">ABC</span><span class="tag g-standup">Stand-up</span><span class="price">R$ 55 a R$ 110</span></div>
+        <h3>Porpetone — “Epidemia de Humor” em Santo André</h3>
+        <p class="desc">Alexandre Porpetone, o rei das imitações, leva seu solo ao Hillarius ABC: personagens, vozes e as imitações que o consagraram na TV e na internet, sem sair do ABC.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado às <b>21h</b></span></div>
+          <div><span class="ic">⌖</span><span>Hillarius ABC — Santo André</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.facebook.com/Porpetone/posts/pfbid0227y89Uv6hxL599GJugcirFi9qhRYW9r7bvM1mQ2wbtGFWNxCuVnkE54mcHHqycEVl" target="_blank" rel="noopener">Agenda oficial do artista (Facebook)</a> · preços: Bilheteria Express</p>
+      
+        <a class="buy" href="https://www.facebook.com/Porpetone/posts/pfbid0227y89Uv6hxL599GJugcirFi9qhRYW9r7bvM1mQ2wbtGFWNxCuVnkE54mcHHqycEVl" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-standup" data-day="sab" data-cat="standup teatro abc">
+        <div class="card-top"><span class="tag abc">ABC</span><span class="tag g-standup">Stand-up</span><span class="price">R$ 50 a R$ 100</span></div>
+        <h3>Matheus Ceará — “Desculpa Eu Ter Vindo” em São Bernardo</h3>
+        <p class="desc">O humorista cearense mais paulista do Brasil apresenta seu solo em São Bernardo do Campo: causos do interior, da família e da vida de casado, no estilo que lota teatros pelo país.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado às <b>21h</b></span></div>
+          <div><span class="ic">⌖</span><span>São Bernardo do Campo, SP · vendas pela Bilheteria Express</span></div>
+        </div>
+        <p class="src">Fonte: Bilheteria Express — agenda de stand-up do ABC</p>
+      </article>
+
+      <article class="card ev" data-day="sab" data-cat="teatro">
+        <div class="card-top"><span class="tag">Teatro</span><span class="tag">Musical · Estreia</span><span class="price">R$ 100 · meia R$ 50</span></div>
+        <h3>Eu Sou um Cabaré — estreia</h3>
+        <p class="desc">Giovana Zotti estreia o musical que mistura humor, histórias pessoais e clássicos da Broadway para falar de envelhecimento, reinvenção e visibilidade feminina. Temporada aos sábados e domingos até 13/12.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado às <b>20h</b> (domingo também, às 20h)</span></div>
+          <div><span class="ic">⌖</span><span>Teatro West Plaza — Av. Antártica, 408, Água Branca (Shopping West Plaza)</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.broadwayworld.com/brazil/article/EU-SOU-UM-CABAR-Im-a-Cabaret-Challenges-Ageism-With-Music-Humor-and-Attitude-20261116" target="_blank" rel="noopener">BroadwayWorld (16/11/2026)</a> · vendas pela Ticketmaster</p>
+      
+        <a class="buy" href="https://www.ticketmaster.com.br/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="sab" data-cat="abc gratis show">
+        <div class="card-top"><span class="tag abc">ABC</span><span class="tag free">Gratuito</span><span class="price free">1 kg de alimento</span></div>
+        <h3>Festival Vozes Negras em Movimento — São Bernardo</h3>
+        <p class="desc">O festival da Consciência Negra da prefeitura ocupa o Parque Chácara Silvestre o fim de semana inteiro, com gastronomia, artesanato e cultura afro. No sábado, o destaque é a tradicional <b>Congada do Parque São Bernardo</b>, às 11h. Entrada solidária: 1 kg de alimento não perecível.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado <b>9h às 19h</b> · Congada às 11h</span></div>
+          <div><span class="ic">⌖</span><span>Parque Chácara Silvestre — Av. Wallace Simonsen, 1800, Nova Petrópolis, São Bernardo do Campo</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://leiasp.com/sao-bernardo-tera-show-de-arlindinho-e-festival-gratuito-no-feriado-da-consciencia-negra/" target="_blank" rel="noopener">LeiaSP (17/11/2026)</a></p>
+      
+        <a class="buy free" href="https://leiasp.com/sao-bernardo-tera-show-de-arlindinho-e-festival-gratuito-no-feriado-da-consciencia-negra/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="sab" data-cat="gratis">
+        <div class="card-top"><span class="tag free">Gratuito</span><span class="tag">Baile charme</span><span class="price free">Grátis</span></div>
+        <h3>Encontro Charme — Cidade Tiradentes</h3>
+        <p class="desc">A cultura charme toma a zona leste no fim da tarde de sábado: baile gratuito do Festival da Consciência Negra para dançar os clássicos do R&amp;B e do charme carioca-paulistano.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado <b>18h às 20h</b></span></div>
+          <div><span class="ic">⌖</span><span>Cidade Tiradentes — zona leste de São Paulo</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://buscadanca.com.br/noticias/consciencia-negra-sp-bailes-black-samba-rock-centro/" target="_blank" rel="noopener">Busca Dança — guia do feriadão</a></p>
+      
+        <a class="buy free" href="https://buscadanca.com.br/noticias/consciencia-negra-sp-bailes-black-samba-rock-centro/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="sab" data-cat="show gratis interior">
+        <div class="card-top"><span class="tag interior">Interior</span><span class="tag free">Gratuito</span><span class="price free">Grátis</span></div>
+        <h3>Serial Funkers — “Clássicos” em Campos do Jordão</h3>
+        <p class="desc">Show gratuito para cantar junto os sucessos que marcaram gerações, no auditório mais charmoso da Serra da Mantiqueira. Ingressos gratuitos retirados pela Sympla — garanta antes, porque a sala lota.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado às <b>20h</b></span></div>
+          <div><span class="ic">⌖</span><span>Museu Felícia Leirner / Auditório Claudio Santoro — Av. Dr. Luís Arrobas Martins, 1880, Campos do Jordão</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.instagram.com/reel/DfkXtrSinxN/" target="_blank" rel="noopener">Museu Felícia Leirner — divulgação oficial</a></p>
+      
+        <a class="buy free" href="https://www.instagram.com/reel/DfkXtrSinxN/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="sab" data-cat="teatro">
+        <div class="card-top"><span class="tag">Teatro</span><span class="tag">Comédia</span><span class="price">via Sympla</span></div>
+        <h3>Amantes do Teatro — Teatro Itália</h3>
+        <p class="desc">Ana Guasque e Eduardo Mossri retomam a história do teatro numa viagem bem-humorada pelos grandes clássicos da dramaturgia — sucesso em todo o Brasil, em curta passagem pela capital (sex, sáb e dom).</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sábado, <b>21/11</b> · temporada de sex a dom (20 a 22/11) · 70 min · 12 anos · <b>atenção: o teatro não divulga o horário da sessão</b> — a programação oficial informa apenas as datas; confira o horário na Sympla ao comprar o ingresso</span></div>
+          <div><span class="ic">⌖</span><span>Teatro Itália — Av. Ipiranga, 344, República</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.teatroitalia.com.br/" target="_blank" rel="noopener">Teatro Itália — programação oficial</a> · ingressos pela Sympla · os valores de R$ 20 a R$ 60 divulgados na turnê são de <b>Campinas</b> (Teatro Castro Mendes, 30 e 31/10), não de São Paulo — por isso o preço da capital não aparece aqui</p>
+      
+        <a class="buy" href="https://www.teatroitalia.com.br/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+    </div>
+    <div class="empty hidden" data-empty-for="gridSab">Nada aqui com esse filtro no sábado — tente outro tipo ou veja o domingo.</div>
+  </section>
+
+  <!-- DOMINGO -->
+  <section id="domingo">
+    <div class="sec-head"><h2>Domingo, <span class="gold">22 de novembro</span></h2><span class="when">Última chance</span></div>
+    <p class="sec-sub">Domingo é dia de despedidas — exposições e o festival de cinema encerram hoje — mas também é o dia do pagode à tarde, do churrasco com tributos em São José dos Campos e do Hot Chip à noite. Quem deixar para depois, perde.</p>
+    <div class="grid" id="gridDom">
+
+      <article class="card ev" data-day="dom" data-cat="expo">
+        <div class="card-top"><span class="tag last">Último dia</span><span class="tag">Exposição</span><span class="price free">Grátis</span></div>
+        <h3>Dignidade e Luta — Laudelina de Campos Mello</h3>
+        <p class="desc">Exposição sobre a pioneira na luta pelos direitos das trabalhadoras domésticas encerra neste domingo no IMS Paulista.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Até <b>22/11</b> · IMS: ter–dom 10h às 20h</span></div>
+          <div><span class="ic">⌖</span><span>IMS Paulista — Av. Paulista, 2424, Bela Vista</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://blog.saocamilo-sp.br/index.php/2026/11/01/agenda-cultural-novembro-2026/" target="_blank" rel="noopener">Agenda Cultural São Camilo — novembro 2026</a></p>
+      
+        <a class="buy free" href="https://ims.com.br/exposicao/dignity-and-struggle-laudelina-de-campos-mello/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="expo">
+        <div class="card-top"><span class="tag last">Último dia</span><span class="tag">Exposição</span><span class="price">R$ 45 · meia R$ 22,50</span></div>
+        <h3>ELOS: Pirilampos do Planeta</h3>
+        <p class="desc">Instalação artística sobre conexões, natureza e meio ambiente se despede do Farol Santander neste domingo.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Até <b>22/11/2026</b> · domingo das <b>9h às 20h</b></span></div>
+          <div><span class="ic">⌖</span><span>Farol Santander — Rua João Brícola, 24, Centro</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://alicepelomundo.com.br/o-que-fazer-em-sao-paulo-em-novembro/" target="_blank" rel="noopener">Alice pelo Mundo — exposições em cartaz</a></p>
+      
+        <a class="buy" href="https://alicepelomundo.com.br/o-que-fazer-em-sao-paulo-em-novembro/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="expo">
+        <div class="card-top"><span class="tag last">Último dia</span><span class="tag">Imersivo · VR</span><span class="price">a partir de R$ 39,50</span></div>
+        <h3>Viagem pelo Cosmos + Machu Picchu</h3>
+        <p class="desc">Duas experiências imersivas encerram no mesmo dia e no mesmo lugar: a viagem espacial em realidade virtual com assinatura do Smithsonian e a visita virtual à cidade perdida dos incas.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Até domingo, <b>22/11</b> · sessões das <b>10h às 19h</b></span></div>
+          <div><span class="ic">⌖</span><span>Fever Hub São Paulo — Av. Major Sylvio de Magalhães Padilha, 16.741, Vila Andrade</span></div>
+          <div><span class="ic">✦</span><span>Cosmos (Smithsonian) a partir de R$ 45 · Machu Picchu a partir de R$ 39,50 — vendas pela Fever</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://spcriancas.substack.com/p/domingo-e-o-ultimo-dia-seu-filho" target="_blank" rel="noopener">SP Crianças (17/11/2026)</a></p>
+      
+        <a class="buy" href="https://feverup.com/m/672218" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="expo gratis">
+        <div class="card-top"><span class="tag last">Último dia</span><span class="tag">Cinema</span><span class="price free">Grátis</span></div>
+        <h3>MixBrasil — sessões de encerramento</h3>
+        <p class="desc">O 34º Festival MixBrasil (138 filmes de 30 países) fecha com duas sessões gratuitas: <b>“As Aparências Enganam”</b> às 19h30 no IMS Paulista e <b>“Alice Júnior — Férias de Verão”</b> às 19h45 no CCSP. Senhas 1h antes, sujeitas à lotação.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo <b>19h30 e 19h45</b></span></div>
+          <div><span class="ic">⌖</span><span>IMS Paulista (Av. Paulista, 2424) e Spcine CCSP Paulo Emílio</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://ims.com.br/mostra/34-festival-mix-brasil-2026/" target="_blank" rel="noopener">IMS — 34º Festival Mix Brasil</a> · <a href="https://www.jwave.com.br/2026/11/olhar-filmes-leva-tres-producoes-ao-festival-mix-brasil-2026/" target="_blank" rel="noopener">JWave</a></p>
+      
+        <a class="buy free" href="https://ims.com.br/mostra/34-festival-mix-brasil-2026/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="expo gratis">
+        <div class="card-top"><span class="tag free">Gratuito</span><span class="tag">Exposição</span><span class="price free">Grátis</span></div>
+        <h3>O Mundo Através da IA — Sesc 24 de Maio</h3>
+        <p class="desc">Cerca de 70 obras em oito núcleos sobre inteligência artificial, arte e tecnologia — fica em cartaz até 29/11, então domingo ainda está tranquilo para ir.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Até <b>29/11</b> · horários do Sesc</span></div>
+          <div><span class="ic">⌖</span><span>Sesc 24 de Maio — Rua 24 de Maio, 109, República</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://blog.saocamilo-sp.br/index.php/2026/11/01/agenda-cultural-novembro-2026/" target="_blank" rel="noopener">Agenda Cultural São Camilo — novembro 2026</a></p>
+      
+        <a class="buy free" href="https://www.sescsp.org.br/editorial/o-mundo-atraves-da-ia-2/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-rap" data-day="dom" data-cat="show feira rap">
+        <div class="card-top"><span class="tag show">Shows</span><span class="tag g-rap">Rap &amp; trap</span><span class="tag">Feira</span><span class="price">a partir de R$ 100</span></div>
+        <h3>Tattoo Week — dia do trap</h3>
+        <p class="desc">Encerramento da feira com o palco tomado pelo trap e pelo rap: <b>Matuê, Brandão, NandaTsunami e Yunk Vino</b>, a partir das 17h.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span><b>12h às 22h</b> · shows a partir das 17h</span></div>
+          <div><span class="ic">⌖</span><span>Expo Center Norte — Rua José Bernardo Pinto, 333, Vila Guilherme</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://universozn.com.br/tattoo-week-2026-expo-center-norte/" target="_blank" rel="noopener">Universo ZN</a> · preço: <a href="https://blog.visitesaopaulo.com/agenda-de-eventos-em-sao-paulo-segunda-quinzena-de-novembro/" target="_blank" rel="noopener">Visite São Paulo</a></p>
+      
+        <a class="buy" href="https://www.ticket360.com.br/evento/641/ingressos-para-tattoo-week-sao-paulo-2026/composto" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-sertanejo" data-day="dom" data-cat="show sertanejo">
+        <div class="card-top"><span class="tag show">Show</span><span class="tag g-sertanejo">Forró &amp; rock nordestino</span><span class="price">R$ 75 a R$ 240</span></div>
+        <h3>Cordel do Fogo Encantado — 2ª noite</h3>
+        <p class="desc">Segunda e última apresentação paulistana da turnê de revisita ao álbum de estreia.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo às <b>19h</b></span></div>
+          <div><span class="ic">⌖</span><span>Casa Natura Musical — Rua Artur de Azevedo, 2134, Pinheiros</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://somdefita.com/cordel-do-fogo-encantado-revive-album-de-estreia/" target="_blank" rel="noopener">Som de Fita (10/11/2026)</a></p>
+      
+        <a class="buy" href="https://bileto.sympla.com.br/event/125583/d/407784" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="teatro show">
+        <div class="card-top"><span class="tag">Teatro</span><span class="tag show">Musical</span><span class="price">a partir de R$ 25*</span></div>
+        <h3>Gil — Andar com Fé, o musical</h3>
+        <p class="desc">Domingo tem duas sessões — a das 15h é a queridinha de quem quer voltar cedo para casa. *Meia do Balcão B; inteira a partir de R$ 50.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sessões às <b>15h e 19h</b></span></div>
+          <div><span class="ic">⌖</span><span>Teatro Santander — Av. Pres. Juscelino Kubitschek, 2041 (JK Iguatemi)</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.midiorama.com/faltam-30-sessoes-musical-sobre-gilberto-gil-se-despede-de-sao-paulo-em-29-de-novembro" target="_blank" rel="noopener">Midiorama</a> · ingressos pela Sympla</p>
+      
+        <a class="buy" href="https://bileto.sympla.com.br/event/115256/d/360382" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="gratis">
+        <div class="card-top"><span class="tag free">Gratuito</span><span class="tag">Cultura afro</span><span class="price free">Grátis</span></div>
+        <h3>Soul Afro — samba e maracatu</h3>
+        <p class="desc">Último dia do festival no Museu Afro Brasil: <b>Alvará do Samba às 14h30</b> e cortejo do <b>Maracatu Ouro do Congo às 17h</b>, além da Feira Ìyálọ́jà o dia todo.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span><b>10h às 18h</b></span></div>
+          <div><span class="ic">⌖</span><span>Museu Afro Brasil — Parque Ibirapuera, Portão 10</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://blog.visitesaopaulo.com/agenda-de-eventos-em-sao-paulo-segunda-quinzena-de-novembro/" target="_blank" rel="noopener">Visite São Paulo — agenda da quinzena</a></p>
+      
+        <a class="buy free" href="https://www.museuafrobrasil.org.br/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="gratis">
+        <div class="card-top"><span class="tag free">Gratuito</span><span class="tag">Rua · Dança</span><span class="price free">Grátis</span></div>
+        <h3>Make House Black Again + Dança Charme</h3>
+        <p class="desc">Domingo dançante e gratuito: house black no Vale do Anhangabaú (12h–21h) e aula de Dança Charme no Sesc Campo Limpo, às 10h30.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span><b>10h30</b> (Sesc) · <b>12h–21h</b> (Anhangabaú)</span></div>
+          <div><span class="ic">⌖</span><span>Vale do Anhangabaú, Centro · Sesc Campo Limpo</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://buscadanca.com.br/noticias/consciencia-negra-sp-bailes-black-samba-rock-centro/" target="_blank" rel="noopener">Busca Dança — guia do feriadão</a></p>
+      
+        <a class="buy free" href="https://buscadanca.com.br/noticias/consciencia-negra-sp-bailes-black-samba-rock-centro/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="teatro">
+        <div class="card-top"><span class="tag">Dança</span><span class="tag">Teatro</span><span class="price">R$ 15 a R$ 50</span></div>
+        <h3>Dança no Sesc 24 de Maio</h3>
+        <p class="desc">Programa duplo: “O samba do crioulo doido”, de Luiz de Abreu, + “Pele em fúria”, de Hubert Petit-Phar. Classificação 18 anos.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo às <b>17h</b> (sábado às 18h)</span></div>
+          <div><span class="ic">⌖</span><span>Sesc 24 de Maio — Rua 24 de Maio, 109, República (ETA)</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://boomerangmusic.com.br/confira-a-agenda-do-sesc-24-de-maio-de-novembro-2026/" target="_blank" rel="noopener">Boomerang Music — agenda Sesc 24 de Maio</a></p>
+      
+        <a class="buy" href="https://www.sescsp.org.br/programacao/pele-em-furia-o-samba-do-crioulo-doido/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="feira gastro gratis">
+        <div class="card-top"><span class="tag">Feira</span><span class="tag">Gastronomia</span><span class="price free">Grátis</span></div>
+        <h3>Feira Beat e Arte — último dia</h3>
+        <p class="desc">Fechamento da feira da Mooca com Allan Piter Duo (MPB) às 15h e DJ Homeless — comida de rua, cerveja artesanal e 70+ expositores.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span><b>10h às 20h</b></span></div>
+          <div><span class="ic">⌖</span><span>Rua Catarina Braida, 38 (esq. Rua Taquari), Mooca</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://vozdobairro.com.br/noticia/76775/mooca-recebe-feira-que-reune-gastronomia-musica-e-economia-criativa-dias-20-21-e-22-de-novembro" target="_blank" rel="noopener">Voz do Bairro (16/11/2026)</a></p>
+      
+        <a class="buy free" href="https://vozdobairro.com.br/noticia/76775/mooca-recebe-feira-que-reune-gastronomia-musica-e-economia-criativa-dias-20-21-e-22-de-novembro" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="abc gratis">
+        <div class="card-top"><span class="tag abc">ABC</span><span class="tag">Família · Natal</span><span class="price free">Grátis</span></div>
+        <h3>Natal Mágico dos Esquilos — São Bernardo</h3>
+        <p class="desc">Programação de Natal já aberta no São Bernardo Plaza Shopping — passeio leve de domingo em família, sem sair do ABC. E no sábado, em Diadema, o SESI tem Feira de Troca de Livros das 10h às 15h.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo <b>12h às 20h</b> (seg–sáb 10h–22h)</span></div>
+          <div><span class="ic">⌖</span><span>São Bernardo Plaza — Av. Rotary, 624, São Bernardo do Campo</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://passeioskids.com/passeios-gratuitos-com-criancas-sao-paulo-passeios-kids/" target="_blank" rel="noopener">Passeios Kids — passeios gratuitos</a></p>
+      
+        <a class="buy free" href="https://passeioskids.com/passeios-gratuitos-com-criancas-sao-paulo-passeios-kids/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="feira">
+        <div class="card-top"><span class="tag last">Último dia</span><span class="tag">Feira</span><span class="price free">Entrada grátis</span></div>
+        <h3>Feira da Gestante — Shopping D</h3>
+        <p class="desc">Último dia da feira de enxoval e produtos para bebês, com ofertas exclusivas de expositores de todo o país.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Até domingo, <b>22/11</b> (desde 18/11)</span></div>
+          <div><span class="ic">⌖</span><span>Shopping D — Av. Cruzeiro do Sul, 1100, Canindé</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://saopaulosecreto.com/feiras-em-sp-para-garimpar-presentes-de-natal/" target="_blank" rel="noopener">São Paulo Secreto — feiras de novembro</a></p>
+      
+        <a class="buy free" href="https://feiradagestante.com" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="teatro interior">
+        <div class="card-top"><span class="tag interior">Interior</span><span class="tag">Teatro · Ribeirão Preto</span><span class="price">R$ 30 a R$ 150</span></div>
+        <h3>DUETOS — Patricya Travassos e Eduardo Moscovis</h3>
+        <p class="desc">A comédia de Peter Quilter, sucesso no Festival de Curitiba, faz só duas apresentações no Theatro Pedro II — a de domingo é a última chance.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo às <b>19h</b> (sábado às 20h) · 80 min</span></div>
+          <div><span class="ic">⌖</span><span>Theatro Pedro II — Rua Álvares Cabral, 370, Centro, Ribeirão Preto</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://andrezzabarros.com/patricya-travassos-e-eduardo-moscovis-chegam-a-ribeirao-preto-com-a-aclamada-comedia-duetos/" target="_blank" rel="noopener">Andrezza Barros (17/11/2026)</a> · ingressos pela Sympla</p>
+      
+        <a class="buy" href="https://bileto.sympla.com.br/event/127462/d/416132" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="teatro interior">
+        <div class="card-top"><span class="tag interior">Interior</span><span class="tag">Dança · São José dos Campos</span><span class="price">pela PagTickets</span></div>
+        <h3>Todas que habitam em mim — Dansoul</h3>
+        <p class="desc">Espetáculo de dança inspirado nas histórias de mulheres de várias gerações, a partir das memórias das famílias dos alunos da Dansoul. Sessões no sábado e no domingo.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo às <b>14h e 18h</b> (sábado nos mesmos horários)</span></div>
+          <div><span class="ic">⌖</span><span>Teatro Municipal de São José dos Campos — Rua Rubião Júnior, 84, Centro</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://vareladiasprodutora.pagtickets.com.br/todas-que-habitam-em-mim-espetaculo-dansoul-2026__26827/?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener">Varela Dias Produtora — página oficial do espetáculo</a></p>
+      
+        <a class="buy" href="https://vareladiasprodutora.pagtickets.com.br/todas-que-habitam-em-mim-espetaculo-dansoul-2026__26827/?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="expo feira gratis interior">
+        <div class="card-top"><span class="tag last">Último dia</span><span class="tag interior">Interior</span><span class="tag">Campinas</span><span class="price free">Grátis</span></div>
+        <h3>Orquídeas de Campinas — encerramento</h3>
+        <p class="desc">Último dia da 27ª Exposição Nacional de Orquídeas, com curso gratuito de cultivo às 10h e as plantas premiadas em exibição até o fim da tarde.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo <b>9h às 16h</b></span></div>
+          <div><span class="ic">⌖</span><span>Instituto Cultural Nipo Brasileiro — Rua Camargo Paes, 118, Jardim Guanabara, Campinas</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://redeutv.com.br/campinas-recebe-a-27a-exposicao-nacional-de-orquideas-de-20-a-22-de-novembro" target="_blank" rel="noopener">Rede UTV News (16/11/2026)</a></p>
+      
+        <a class="buy free" href="https://redeutv.com.br/campinas-recebe-a-27a-exposicao-nacional-de-orquideas-de-20-a-22-de-novembro" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="gratis interior">
+        <div class="card-top"><span class="tag interior">Interior</span><span class="tag">Natal · Sorocaba</span><span class="price free">Grátis</span></div>
+        <h3>Natal Luz na Praça — Sorocaba</h3>
+        <p class="desc">Praça iluminada com milhares de luzes, mini parque de diversões, Trenzinho da Alegria, praça de alimentação e Papai Noel recebendo as famílias no sábado e no domingo.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Sáb e Dom · <b>19h às 22h</b> (vai até 20/12, de qui a dom)</span></div>
+          <div><span class="ic">⌖</span><span>Praça do Jardim Magnólia — Alameda Itália, 699, Sorocaba</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://agendasorocaba.com.br/listas-novidades/natal-luz-na-praca-em-sorocaba/" target="_blank" rel="noopener">Agenda Sorocaba (16/11/2026)</a></p>
+      
+        <a class="buy free" href="https://agendasorocaba.com.br/listas-novidades/natal-luz-na-praca-em-sorocaba/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-eletronica" data-day="dom" data-cat="show eletronica rock">
+        <div class="card-top"><span class="tag show">Show internacional</span><span class="tag g-eletronica">Eletrônica</span><span class="price">R$ 220 a R$ 800</span></div>
+        <h3>Hot Chip + Inky — Audio</h3>
+        <p class="desc">Os britânicos do Hot Chip trazem seu synthpop dançante para a Audio, e a abertura é um acontecimento à parte: a paulistana <b>Inky volta aos palcos após dez anos</b>, com a formação original. Classificação: 18 anos.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo · casa abre <b>19h</b> · show às <b>21h</b></span></div>
+          <div><span class="ic">⌖</span><span>Audio — Av. Francisco Matarazzo, 694, Água Branca</span></div>
+          <div><span class="ic">✦</span><span>Pista R$ 440 (meia R$ 220) · camarote R$ 800 (meia R$ 400) — Eventim</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://cadernopop.com.br/inky-retorna-aos-palcos-apos-dez-anos-e-abre-show-do-hot-chip-em-sao-paulo/" target="_blank" rel="noopener">Caderno Pop (17/11/2026)</a></p>
+      
+        <a class="buy" href="https://www.eventim.com.br/city/sao-paulo-943/shows-musica-175/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-pagode" data-day="dom" data-cat="pagode show">
+        <div class="card-top"><span class="tag g-pagode">Pagode &amp; samba</span><span class="tag">Domingo à tarde</span><span class="price">VIP grátis · pista R$ 30</span></div>
+        <h3>Pagode no NaRua Bar — Cleber Augusto, Naninha e mais</h3>
+        <p class="desc">Domingão de pagode na zona norte com quatro atrações: <b>Cleber Augusto, Naninha, Samba da Casa Verde e Pagode Classe A</b>. Tem entrada VIP gratuita (limitada) e pista a R$ 30 + taxa no 1º lote. Classificação livre.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo · abertura às <b>13h</b></span></div>
+          <div><span class="ic">⌖</span><span>NaRua Gastro Bar — Av. Engenheiro Caetano Álvares, 4528, Imirim</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://testeprodfelipe.clubedoingresso.com/evento/cleberaugusto-naninha-sambadacasaverde-pagodeclassea" target="_blank" rel="noopener">Clube do Ingresso — página oficial do evento</a></p>
+      
+        <a class="buy" href="https://testeprodfelipe.clubedoingresso.com/evento/cleberaugusto-naninha-sambadacasaverde-pagodeclassea" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-pagode" data-day="dom" data-cat="pagode show balada">
+        <div class="card-top"><span class="tag g-pagode">Pagode</span><span class="tag">Gravação ao vivo</span><span class="price">via Sympla</span></div>
+        <h3>Presença Confirmada — Pé na Areia</h3>
+        <p class="desc">O grupo <b>Presença Ousada</b> comanda uma tarde de pagode pé na areia com Puro Clima, Pedindo Bis e Samba de Dom — e a festa ainda é uma <b>gravação audiovisual</b>: quem for, entra para a história do grupo.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo a partir das <b>14h</b></span></div>
+          <div><span class="ic">⌖</span><span>Arena JR — São Paulo, SP</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.sympla.com.br/evento/presenca-confirmada-pe-na-areia-presenca-ousada/3627292" target="_blank" rel="noopener">Sympla — página oficial do evento</a></p>
+      
+        <a class="buy" href="https://www.sympla.com.br/evento/presenca-confirmada-pe-na-areia-presenca-ousada/3627292" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-pagode" data-day="dom" data-cat="pagode show">
+        <div class="card-top"><span class="tag g-pagode">Pagode</span><span class="tag">DVD 35 anos</span><span class="price">Deck Bar · Interlagos</span></div>
+        <h3>Pedindo Bis — gravação do DVD “Patrimônio Sonoro”</h3>
+        <p class="desc">O grupo Pedindo Bis grava ao vivo o DVD comemorativo de <b>35 anos de carreira</b>, com o Samba de Dom como convidado especial. Domingo de samba de raiz em Interlagos, daqueles para guardar na memória.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo às <b>13h</b></span></div>
+          <div><span class="ic">⌖</span><span>Deck Bar São Paulo — Av. Atlântica, 4200, Interlagos</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.instagram.com/p/Dfm9W-bu2js/" target="_blank" rel="noopener">Grupo Pedindo Bis (@grupopedindobis) — divulgação oficial</a></p>
+      
+        <a class="buy" href="https://www.instagram.com/p/Dfm9W-bu2js/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-pagode" data-day="dom" data-cat="pagode balada">
+        <div class="card-top"><span class="tag g-pagode">Samba &amp; pagode</span><span class="tag g-balada">Só para mulheres</span><span class="price">R$ 20 a R$ 35</span></div>
+        <h3>Delas Fest — Edição Marrom</h3>
+        <p class="desc">Domingo do jeito que elas gostam: samba, pagode, DJs, drinks e dança num evento exclusivo para mulheres, das 15h à meia-noite, na zona leste. A edição Marrom é a última do ano da festa.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo <b>15h às 0h</b></span></div>
+          <div><span class="ic">⌖</span><span>Rua Tié, 139, Vila Bertioga — zona leste de São Paulo</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://shotgun.live/pt-br/events/delas-fest-edicao-marrom" target="_blank" rel="noopener">Shotgun — página oficial do evento</a></p>
+      
+        <a class="buy" href="https://shotgun.live/pt-br/events/delas-fest-edicao-marrom" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-standup" data-day="dom" data-cat="standup teatro">
+        <div class="card-top"><span class="tag g-standup">Stand-up</span><span class="tag">Domingo</span><span class="price">até R$ 50</span></div>
+        <h3>Amanhã é Segunda — stand-up de domingo</h3>
+        <p class="desc">A noite de comédia que virou tradição para fechar o fim de semana rindo: elenco rotativo de humoristas testando e apresentando seus melhores textos, sempre aos domingos às 19h.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo às <b>19h</b></span></div>
+          <div><span class="ic">⌖</span><span>Laje Carioca — São Paulo, SP</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.clubedoingresso.com/agenda?categoria=shows-festas-teatro-standup-feiras-tv&filtro=semana" target="_blank" rel="noopener">Clube do Ingresso — agenda da semana</a> · listado no Guia Sampa Online entre os eventos com ingresso até R$ 50</p>
+      
+        <a class="buy" href="https://www.clubedoingresso.com/agenda?categoria=shows-festas-teatro-standup-feiras-tv&filtro=semana" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="teatro">
+        <div class="card-top"><span class="tag">Teatro</span><span class="tag">Musical</span><span class="price">R$ 100 · meia R$ 50</span></div>
+        <h3>Eu Sou um Cabaré — sessão de domingo</h3>
+        <p class="desc">Segunda sessão do fim de semana de estreia do musical de Giovana Zotti: humor, histórias de bastidor e canções da Broadway sobre envelhecer sem perder a atitude.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo às <b>20h</b></span></div>
+          <div><span class="ic">⌖</span><span>Teatro West Plaza — Av. Antártica, 408, Água Branca (Shopping West Plaza)</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://www.broadwayworld.com/brazil/article/EU-SOU-UM-CABAR-Im-a-Cabaret-Challenges-Ageism-With-Music-Humor-and-Attitude-20261116" target="_blank" rel="noopener">BroadwayWorld (16/11/2026)</a> · vendas pela Ticketmaster</p>
+      
+        <a class="buy" href="https://www.ticketmaster.com.br/" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="abc gratis show">
+        <div class="card-top"><span class="tag abc">ABC</span><span class="tag free">Gratuito</span><span class="price free">1 kg de alimento</span></div>
+        <h3>Vozes Negras — domingo em São Bernardo</h3>
+        <p class="desc">Último dia do Festival Vozes Negras em Movimento: espetáculo infantil circense Pixushow às 9h e, às 14h20, <b>Tati Bueno apresenta “Uma Ode a Clara Nunes”</b> — memória, ancestralidade e legado da maior sambista do país. Entrada solidária: 1 kg de alimento.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo <b>9h às 19h</b></span></div>
+          <div><span class="ic">⌖</span><span>Parque Chácara Silvestre — Av. Wallace Simonsen, 1800, Nova Petrópolis, São Bernardo do Campo</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://leiasp.com/sao-bernardo-tera-show-de-arlindinho-e-festival-gratuito-no-feriado-da-consciencia-negra/" target="_blank" rel="noopener">LeiaSP (17/11/2026)</a></p>
+      
+        <a class="buy free" href="https://leiasp.com/sao-bernardo-tera-show-de-arlindinho-e-festival-gratuito-no-feriado-da-consciencia-negra/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev g-rock" data-day="dom" data-cat="gastro gratis interior rock">
+        <div class="card-top"><span class="tag interior">Interior</span><span class="tag free">Gratuito</span><span class="tag">Churrasco · SJC</span><span class="price free">Grátis</span></div>
+        <h3>Made in Fogo Festival BBQ — São José dos Campos</h3>
+        <p class="desc">O maior festival de churrasco itinerante do país estreia em São José com entrada gratuita e domingo de tributos: <b>Sherlock</b> (anos 80) às 12h30, <b>Confisco</b> (Charlie Brown Jr.) às 16h e <b>Keep the Faith</b> (Bon Jovi) às 19h. Tem lounge kids e área pet.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo · shows <b>12h30, 16h e 19h</b></span></div>
+          <div><span class="ic">⌖</span><span>Estacionamento do CenterVale Shopping (Portaria E) — Av. Dep. Benedito Matarazzo, 9403, Jd. Oswaldo Cruz, São José dos Campos</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://sjcemfoco.com/festival-de-churrasco-com-entrada-gratuita-chega-a-sao-jose-de-20-a-22-de-novembro/" target="_blank" rel="noopener">SJC em Foco (17/11/2026)</a></p>
+      
+        <a class="buy free" href="https://sjcemfoco.com/festival-de-churrasco-com-entrada-gratuita-chega-a-sao-jose-de-20-a-22-de-novembro/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="show interior">
+        <div class="card-top"><span class="tag interior">Interior</span><span class="tag show">Show · Sorocaba</span><span class="price free">Grátis</span></div>
+        <h3>Luccas Folha + Nyatta — Sesc Sorocaba</h3>
+        <p class="desc">A dupla apresenta ao vivo o universo do EP recém-lançado “Meio Período”, que retrata a vida de quem divide o tempo entre o trabalho formal e a construção artística — a cara da nova música brasileira.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo às <b>17h</b></span></div>
+          <div><span class="ic">⌖</span><span>Sesc Sorocaba — Rua Barão de Piratininga, 555, Jardim Faculdade, Sorocaba</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://bolashow.net/show/luccas-folha-nyatta/" target="_blank" rel="noopener">BolaShow — agenda de shows do interior</a></p>
+      
+        <a class="buy free" href="https://bolashow.net/show/luccas-folha-nyatta/" target="_blank" rel="noopener">Garantir vaga <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card ev" data-day="dom" data-cat="show interior">
+        <div class="card-top"><span class="tag interior">Interior</span><span class="tag show">Show · Sorocaba</span><span class="price">entrada paga</span></div>
+        <h3>Yoùn — Flor de Café, Sorocaba</h3>
+        <p class="desc">Show intimista de fim de tarde num dos cafés mais queridos de Sorocaba — programa de domingo tranquilo para fechar o fim de semana no interior sem pressa.</p>
+        <div class="meta">
+          <div><span class="ic">◷</span><span>Domingo às <b>16h</b></span></div>
+          <div><span class="ic">⌖</span><span>Flor de Café — Sorocaba, SP</span></div>
+        </div>
+        <p class="src">Fonte: <a href="https://bolashow.net/show/youn-sorocaba/" target="_blank" rel="noopener">BolaShow — agenda de shows do interior</a></p>
+      
+        <a class="buy" href="https://ingresse.com/tranquilosorocaba-2026-11-22/?utm_source=bolashow" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden="true">→</span></a>
+      </article>
+
+    </div>
+    <div class="empty hidden" data-empty-for="gridDom">Nada aqui com esse filtro no domingo — tente outro tipo ou veja o sábado.</div>
+  </section>
+
+  <!-- ROTEIROS -->
+  <section id="roteiros">
+    <div class="sec-head"><h2>Roteiros <span class="gold">prontos</span></h2><span class="when">Para só escolher e sair</span></div>
+    <p class="sec-sub">Cinco combinações montadas com os programas acima — do ABC à Mooca, do centro de São Paulo à noite de funk, do domingo de pagode ao fim de semana inteiro em Campinas.</p>
+    <div class="roteiro">
+      <div class="route">
+        <span class="rsub">Sábado · ABC e arredores</span>
+        <h3>ABC + Mooca, sem pressa</h3>
+        <ol>
+          <li><span><b>12h — Festival Medieval em Santo André.</b> Almoço temático, combates e música no Carrefour da Av. Pedro Américo (grátis, ingresso pela Sympla).</span></li>
+          <li><span><b>15h30 — Feira Beat e Arte, na Mooca.</b> Garimpo com expositores locais ao som do Rock BR Trio.</span></li>
+          <li><span><b>Noite — você escolhe:</b> voltar ao Medieval (vai até 22h) ou fotos com o Papai Noel no Grand Plaza (até 21h).</span></li>
+        </ol>
+      </div>
+      <div class="route">
+        <span class="rsub">Domingo · última chance</span>
+        <h3>Paulista + Ibirapuera</h3>
+        <ol>
+          <li><span><b>Manhã/tarde — IMS Paulista.</b> Último dia de “Dignidade e Luta” (grátis) na Av. Paulista.</span></li>
+          <li><span><b>14h30 — Soul Afro no Ibirapuera.</b> Alvará do Samba e, às 17h, o cortejo do Maracatu Ouro do Congo no Museu Afro Brasil.</span></li>
+          <li><span><b>19h30 — Cinema grátis.</b> Encerramento do MixBrasil com “As Aparências Enganam” no IMS — chegue 1h antes para a senha.</span></li>
+        </ol>
+      </div>
+      <div class="route">
+        <span class="rsub">Fim de semana · interior</span>
+        <h3>Campinas em dois dias</h3>
+        <ol>
+          <li><span><b>Sábado de manhã — Orquídeas no Jardim Guanabara.</b> Exposição nacional gratuita no Instituto Nipo, com curso de cultivo às 10h.</span></li>
+          <li><span><b>Sábado à tarde/noite — Ventos do Oeste.</b> Dança no Teatro Castro Mendes, às 16h ou às 20h (R$ 80 a R$ 160).</span></li>
+          <li><span><b>Domingo à tarde — Hip Hop na Estação Cultura.</b> Festival gratuito das 13h às 22h com Edi Rock, Rashid, Tasha &amp; Tracie e mais — leve 1 kg de alimento para doar, se puder.</span></li>
+        </ol>
+      </div>
+      <div class="route">
+        <span class="rsub">Sábado à noite · funk &amp; balada</span>
+        <h3>A noite que não acaba</h3>
+        <ol>
+          <li><span><b>14h — Esquenta no PAQUERA.</b> Sunset no Varanda Estaiada com Delacruz, Gaab e pagode anos 90 para começar o sábado dançando.</span></li>
+          <li><span><b>22h — TILT no NOLA.</b> Chegue antes da meia-noite e entre VIP: funk a noite toda na pista principal da Vila Madalena.</span></li>
+          <li><span><b>23h — FUNK-ME na Augusta.</b> Feche no maior open bar da Rua Augusta, com mandelão e 150 BPM até o amanhecer (18+).</span></li>
+        </ol>
+      </div>
+      <div class="route">
+        <span class="rsub">Domingo · do pagode ao eletrônico</span>
+        <h3>Domingo sem sofá</h3>
+        <ol>
+          <li><span><b>13h — Pagode no NaRua Bar.</b> Cleber Augusto, Naninha e Pagode Classe A no Imirim — tem entrada VIP gratuita limitada, chegue cedo.</span></li>
+          <li><span><b>14h — Pé na Areia na Arena JR.</b> Presença Ousada, Pedindo Bis e Samba de Dom gravando audiovisual — você pode aparecer no registro oficial.</span></li>
+          <li><span><b>21h — Hot Chip na Audio.</b> Feche o fim de semana com synthpop britânico e a volta da Inky aos palcos (18+).</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="cols">
+      <div>
+        <h4>Antes de sair</h4>
+        <ul>
+          <li>Programação pesquisada em <b>17/11/2026</b> — horários e preços podem mudar; confira a fonte de cada card.</li>
+          <li>Best of Blues: domingo <b>esgotado</b> e sábado nas últimas unidades, segundo o Caderno Pop (16/11).</li>
+          <li>Orgulho Nerd e Festival Medieval são gratuitos, mas pedem cadastro/ingresso antecipado (site oficial e Sympla).</li>
+          <li>MixBrasil no IMS: senhas distribuídas 60 min antes, 1 por pessoa, sujeitas à lotação.</li>
+          <li>Bailes e baladas marcados com <b>18+</b> exigem documento com foto na porta — FUNK-ME, História do Funk, Gasolina e Hot Chip estão entre eles.</li>
+          <li>Queen Legend no Blue Note mudou de horário: das 22h30 para as <b>20h</b>, segundo comunicado da Eventim.</li>
+          <li>Festas na Sympla (TILT, Festa da Espuma, COF COF) viram lote sem aviso — o preço da porta costuma ser maior que o antecipado.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Fontes consultadas</h4>
+        <ul>
+          <li><a href="https://blog.visitesaopaulo.com/agenda-de-eventos-em-sao-paulo-segunda-quinzena-de-novembro/" target="_blank" rel="noopener">Visite São Paulo</a> · <a href="https://alicepelomundo.com.br/o-que-fazer-em-sao-paulo-em-novembro/" target="_blank" rel="noopener">Alice pelo Mundo</a></li>
+          <li><a href="https://cadernopop.com.br/best-of-blues-and-rock-2026-horarios-atracoes-ingressos-e-tudo-o-que-voce-precisa-saber-sobre-o-festival/" target="_blank" rel="noopener">Caderno Pop</a> · <a href="https://www.gamersegames.com.br/2026/11/17/com-entrada-gratuita-orgulho-nerd-sp-divulga-programacao-completa-de-2026/" target="_blank" rel="noopener">Gamers &amp; Games</a></li>
+          <li><a href="https://portalabcpaulista.com.br/carrefour-santo-andre-recebe-festival-gastronomico-medieval/" target="_blank" rel="noopener">Portal ABC Paulista</a> · <a href="https://saopaulosecreto.com/feiras-em-sp-para-garimpar-presentes-de-natal/" target="_blank" rel="noopener">São Paulo Secreto</a></li>
+          <li><a href="https://ims.com.br/mostra/34-festival-mix-brasil-2026/" target="_blank" rel="noopener">IMS</a> · <a href="https://www.ticket360.com.br/evento/33579/ingressos-para-caetano-nos-festivais" target="_blank" rel="noopener">Ticket360</a> · <a href="https://www.dnjfest.com.br/" target="_blank" rel="noopener">DNJ Fest (oficial)</a></li>
+          <li>Interior: <a href="https://rmcurgente.com.br/2026/11/12/estacao-cultura-recebe-13a-edicao-do-campinas-hip-hop-festival-no-dia-22-de-novembro/" target="_blank" rel="noopener">RMC Urgente</a> · <a href="https://www.ipaday.com.br/index.html" target="_blank" rel="noopener">IPA Day Brasil</a> · <a href="https://portalyoba.com.br/beto-guedes-e-14-bis-prometem-noite-historica-de-classicos-da-musica-brasileira-neste-sabado-em-ribeirao-preto/" target="_blank" rel="noopener">Portal Yoba</a> · <a href="https://agendasorocaba.com.br/listas-novidades/natal-luz-na-praca-em-sorocaba/" target="_blank" rel="noopener">Agenda Sorocaba</a> · <a href="https://sjcemfoco.com/festival-de-churrasco-com-entrada-gratuita-chega-a-sao-jose-de-20-a-22-de-novembro/" target="_blank" rel="noopener">SJC em Foco</a> · <a href="https://bolashow.net/show/luccas-folha-nyatta/" target="_blank" rel="noopener">BolaShow</a></li>
+          <li>Noite e humor: <a href="https://www.sympla.com.br/evento/funk-me-o-maior-open-bar-da-rua-augusta-21-11-augusta-hifi/3627413" target="_blank" rel="noopener">Sympla</a> · <a href="http://wegoout.com.br/eventos/the-grid-unreal" target="_blank" rel="noopener">WeGoOut</a> · <a href="https://staging3.eventim.com.br/artist/blue-note-sp/queen-legend-o-legado-de-freddie-mercury-4271982/" target="_blank" rel="noopener">Eventim</a> · <a href="https://ticketnamao.com.br/produto/blackfriday-andre-santi-sp-21-nov-19h30/" target="_blank" rel="noopener">Ticket na Mão</a> · <a href="https://shotgun.live/pt-br/events/delas-fest-edicao-marrom" target="_blank" rel="noopener">Shotgun</a> · <a href="https://leiasp.com/sao-bernardo-tera-show-de-arlindinho-e-festival-gratuito-no-feriado-da-consciencia-negra/" target="_blank" rel="noopener">LeiaSP</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="credit">Painel público do fim de semana · Capital, ABC e interior de SP<br>Feito pela <b>PVSR HOLDING TECH</b></p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var day='all', cat='all';
+  function apply(){
+    document.querySelectorAll('.ev').forEach(function(el){
+      var days=(el.getAttribute('data-day')||'').split(' ');
+      var cats=(el.getAttribute('data-cat')||'').split(' ');
+      var okDay = day==='all' || days.indexOf(day)>-1;
+      var okCat = cat==='all' || cats.indexOf(cat)>-1;
+      el.classList.toggle('hidden', !(okDay && okCat));
+    });
+    ['gridSab','gridDom'].forEach(function(id){
+      var grid=document.getElementById(id); if(!grid) return;
+      var any=Array.prototype.some.call(grid.querySelectorAll('.ev'), function(el){return !el.classList.contains('hidden');});
+      var empty=document.querySelector('[data-empty-for="'+id+'"]');
+      if(empty) empty.classList.toggle('hidden', any);
+    });
+    // hide featured section entirely if nothing visible there
+    var feat=document.getElementById('destaques');
+    if(feat){
+      var anyF=Array.prototype.some.call(feat.querySelectorAll('.ev'), function(el){return !el.classList.contains('hidden');});
+      feat.classList.toggle('hidden', !anyF);
+    }
+  }
+  function wire(id, attr, set){
+    var box=document.getElementById(id); if(!box) return;
+    box.addEventListener('click', function(e){
+      var btn=e.target.closest('button'); if(!btn) return;
+      box.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed','false');});
+      btn.setAttribute('aria-pressed','true');
+      set(btn.getAttribute(attr));
+      apply();
+    });
+  }
+  wire('dayFilters','data-day', function(v){day=v;});
+  // tipo e gênero dividem a mesma dimensão de filtro: escolher um limpa o outro
+  ['catFilters','genreFilters'].forEach(function(id){
+    var box=document.getElementById(id); if(!box) return;
+    box.addEventListener('click', function(e){
+      var btn=e.target.closest('button'); if(!btn) return;
+      ['catFilters','genreFilters'].forEach(function(other){
+        var ob=document.getElementById(other); if(!ob) return;
+        ob.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed','false');});
+      });
+      btn.setAttribute('aria-pressed','true');
+      cat=btn.getAttribute('data-cat');
+      apply();
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  // Clicar em qualquer ponto do card abre a página oficial de compra/inscrição
+  // (o mesmo destino do botão). Cliques nos links da fonte seguem o destino deles.
+  document.querySelectorAll('.ev').forEach(function(el){
+    var buy=el.querySelector('a.buy'); if(!buy) return;
+    el.classList.add('clickable');
+    el.addEventListener('click', function(e){
+      if(e.target.closest('a')) return;
+      window.open(buy.getAttribute('href'), '_blank', 'noopener');
+    });
+  });
+})();
+</script>
+</body>
+</html>
